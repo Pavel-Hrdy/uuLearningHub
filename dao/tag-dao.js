@@ -40,7 +40,6 @@ class TagDao {
 
   async getTagByName(name) {
     let tags = await this._loadAllTags();
-    console.log(tags)
     const tag = tags.find(b => {return b.name === name;});
     return tag;
   }
