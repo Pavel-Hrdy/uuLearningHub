@@ -1,0 +1,138 @@
+[
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Glossary/Scope",
+    "name": "scope"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator",
+    "name": "conditional_operator"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var",
+    "name": "var"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "name": "boolean"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "name": "null"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "name": "array"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/set",
+    "name": "set"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/API/console/log",
+    "name": "log"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "name": "object"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for",
+    "name": "for"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions",
+    "name": "regular_expressions"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
+    "name": "let"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "name": "string"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math",
+    "name": "math"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values",
+    "name": "return_values"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Glossary/Recursion",
+    "name": "recursion"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const",
+    "name": "const"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "name": "number"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch",
+    "name": "switch"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "name": "date"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators",
+    "name": "expressions_and_operators"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "name": "undefined"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions",
+    "name": "functions"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue",
+    "name": "continue"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar",
+    "name": "lexical_grammar"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures",
+    "name": "data_structures"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters",
+    "name": "default_parameters"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break",
+    "name": "break"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch",
+    "name": "try...catch"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "name": "symbol"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
+    "name": "arrow_functions"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while",
+    "name": "while"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/API/Comment",
+    "name": "comment"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else",
+    "name": "if...else"
+  }
+]

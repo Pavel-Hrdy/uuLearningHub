@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Binary Numbers and Base Systems",
+    "description": "Binary Numbers and Base Systems as Fast as Possible",
+    "link": "https://www.youtube.com/embed/LpuPe81bc2w",
+    "state": "active",
+    "chapterSchema": {
+      "chapterOrderNumber": "2",
+      "subchapterOrderNumber": "1"
+    },
+    "creationDate": "2022-05-05T19:59:19.508Z",
+    "id": "LpuPe81bc2w",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Why Do Computers Use 1s and 0s?",
+    "description": "Binary and Transistors Explained.",
+    "link": "https://www.youtube.com/embed/Xpk67YzOn5w",
+    "state": "active",
+    "chapterSchema": {
+      "chapterOrderNumber": "2",
+      "subchapterOrderNumber": "1"
+    },
+    "creationDate": "2022-05-05T19:59:59.918Z",
+    "id": "Xpk67YzOn5w",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "How computer memory works",
+    "description": "In many ways, our memories make us who we are, helping us remember our past, learn and retain skills, and plan for the future. And for the computers that often act as extensions of ourselves, memory plays much the same role. Kanawat Senanan explains how computer memory works.",
+    "link": "https://www.youtube.com/embed/p3q5zWCw8J4",
+    "state": "active",
+    "chapterSchema": {
+      "chapterOrderNumber": "2",
+      "subchapterOrderNumber": "2"
+    },
+    "creationDate": "2022-05-05T20:07:05.558Z",
+    "id": "p3q5zWCw8J4",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "RAM Explained",
+    "description": "RAM Explained - Random Access Memory.",
+    "link": "https://www.youtube.com/embed/PVad0c2cljo",
+    "state": "active",
+    "chapterSchema": {
+      "chapterOrderNumber": "2",
+      "subchapterOrderNumber": "2"
+    },
+    "creationDate": "2022-05-05T20:14:22.719Z",
+    "id": "PVad0c2cljo",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "How Do Computers Remember?",
+    "description": "Exploring some of the basics of computer memory: latches, flip flops, and registers!",
+    "link": "https://www.youtube.com/embed/I0-izyq6q5s",
+    "state": "active",
+    "chapterSchema": {
+      "chapterOrderNumber": "2",
+      "subchapterOrderNumber": "2"
+    },
+    "creationDate": "2022-05-05T20:20:25.126Z",
+    "id": "I0-izyq6q5s",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "How data are stored in the memory?",
+    "description": " Today, we Learn, How different types of data are stored in the memory. i.e Data types we used for storing the values are arranged in the RAM memory. ",
+    "link": "https://www.youtube.com/embed/fMkUNrq2svg",
+    "state": "active",
+    "chapterSchema": {
+      "chapterOrderNumber": "1",
+      "subchapterOrderNumber": "1"
+    },
+    "creationDate": "2022-05-05T20:22:50.590Z",
+    "id": "fMkUNrq2svg",
+    "tags": [
+      "9ad296bb5fc1f1237bcb475c1480411f",
+      "1e62981ff0ba934f9ae91a565100e7cb"
+    ],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  }
+]
