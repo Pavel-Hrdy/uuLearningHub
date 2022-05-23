@@ -25,9 +25,9 @@ async function ListAbl(req, res) {
     // if the tag is specified in the query...
     if (tag) {
       // ... tag property is added to the filter map
-      if (tagDao.getTagByName(tag)) {
+      if (await tagDao.getTagByName(tag)) {
         tag = await tagDao.getTagByName(tag);
-        searchMap.tag = tag.id;
+        searchMap.tag = tag.name;
       } else {
         res.status(400).send(`Given tag ${tag} doesn't exist!`)
       }
