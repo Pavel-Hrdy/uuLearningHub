@@ -42,7 +42,7 @@ const schema = {
       },
       "uniqueItems": true
     },
-    /* TODO LINKS
+
     "links": {
       "type": "array",
       "items": {
@@ -50,8 +50,6 @@ const schema = {
       },
       "uniqueItems": true
     },
-
-    */
     "state": {
       "type": "string"}
   },

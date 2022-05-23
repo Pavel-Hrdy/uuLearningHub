@@ -1,99 +1,224 @@
 [
   {
-    "name": "Binary Numbers and Base Systems",
-    "description": "Binary Numbers and Base Systems as Fast as Possible",
-    "link": "https://www.youtube.com/embed/LpuPe81bc2w",
-    "state": "active",
-    "chapterSchema": {
-      "chapterOrderNumber": "2",
-      "subchapterOrderNumber": "1"
-    },
-    "creationDate": "2022-05-05T19:59:19.508Z",
-    "id": "LpuPe81bc2w",
-    "tags": [],
-    "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "Why Do Computers Use 1s and 0s?",
-    "description": "Binary and Transistors Explained.",
-    "link": "https://www.youtube.com/embed/Xpk67YzOn5w",
-    "state": "active",
-    "chapterSchema": {
-      "chapterOrderNumber": "2",
-      "subchapterOrderNumber": "1"
-    },
-    "creationDate": "2022-05-05T19:59:59.918Z",
-    "id": "Xpk67YzOn5w",
-    "tags": [],
-    "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "How computer memory works",
-    "description": "In many ways, our memories make us who we are, helping us remember our past, learn and retain skills, and plan for the future. And for the computers that often act as extensions of ourselves, memory plays much the same role. Kanawat Senanan explains how computer memory works.",
-    "link": "https://www.youtube.com/embed/p3q5zWCw8J4",
-    "state": "active",
-    "chapterSchema": {
-      "chapterOrderNumber": "2",
-      "subchapterOrderNumber": "2"
-    },
-    "creationDate": "2022-05-05T20:07:05.558Z",
-    "id": "p3q5zWCw8J4",
-    "tags": [],
-    "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "RAM Explained",
-    "description": "RAM Explained - Random Access Memory.",
-    "link": "https://www.youtube.com/embed/PVad0c2cljo",
-    "state": "active",
-    "chapterSchema": {
-      "chapterOrderNumber": "2",
-      "subchapterOrderNumber": "2"
-    },
-    "creationDate": "2022-05-05T20:14:22.719Z",
-    "id": "PVad0c2cljo",
-    "tags": [],
-    "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "How Do Computers Remember?",
-    "description": "Exploring some of the basics of computer memory: latches, flip flops, and registers!",
-    "link": "https://www.youtube.com/embed/I0-izyq6q5s",
-    "state": "active",
-    "chapterSchema": {
-      "chapterOrderNumber": "2",
-      "subchapterOrderNumber": "2"
-    },
-    "creationDate": "2022-05-05T20:20:25.126Z",
-    "id": "I0-izyq6q5s",
-    "tags": [],
-    "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "How data are stored in the memory?",
-    "description": " Today, we Learn, How different types of data are stored in the memory. i.e Data types we used for storing the values are arranged in the RAM memory. ",
-    "link": "https://www.youtube.com/embed/fMkUNrq2svg",
-    "state": "active",
+    "name": "History of JavaScript",
+    "description": "This video is about javascript.",
+    "link": "https://www.youtube.com/embed/4MsfBokJiSs",
     "chapterSchema": {
       "chapterOrderNumber": "1",
       "subchapterOrderNumber": "1"
     },
-    "creationDate": "2022-05-05T20:22:50.590Z",
-    "id": "fMkUNrq2svg",
-    "tags": [
-      "9ad296bb5fc1f1237bcb475c1480411f",
-      "1e62981ff0ba934f9ae91a565100e7cb"
-    ],
+    "state": "active",
+    "creationDate": "2022-05-23T11:43:41.030Z",
+    "id": "4MsfBokJiSs",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Ovládání JavaScript - co je to JavaScript",
+    "description": "This video introduces what HTML, CSS and JavaScript are. It explains the difference between them. ",
+    "link": "https://www.youtube.com/embed/A3GjzmUoeSs",
+    "chapterSchema": {
+      "chapterOrderNumber": "1",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:43:54.872Z",
+    "id": "A3GjzmUoeSs",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "What is JavaScript?",
+    "description": "What is JavaScript and what is JavaScript used for?",
+    "link": "https://www.youtube.com/embed/afSbBjAaqeM",
+    "chapterSchema": {
+      "chapterOrderNumber": "1",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:44:04.019Z",
+    "id": "afSbBjAaqeM",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Convert decimal to binary",
+    "description": "Learn how to convert decimal to binary in javascript. Learn the power of for loop in javascript.",
+    "link": "https://www.youtube.com/embed/UaYkmkBZIAM",
+    "chapterSchema": {
+      "chapterOrderNumber": "2",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:44:17.857Z",
+    "id": "UaYkmkBZIAM",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Primary Math to convert decimal to binary",
+    "description": "This video will teach you how to convert number systems in HTML and JavaScript.",
+    "link": "https://www.youtube.com/embed/cnb1c8ciN9s",
+    "chapterSchema": {
+      "chapterOrderNumber": "2",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:44:28.782Z",
+    "id": "cnb1c8ciN9s",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Converting decimal numbers to binary",
+    "description": "This video shows how to convert numbers. Converting decimal numbers to binary, octal and hexadecimal numbers.",
+    "link": "https://www.youtube.com/embed/Xzi4-26vdOM",
+    "chapterSchema": {
+      "chapterOrderNumber": "2",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:44:39.008Z",
+    "id": "Xzi4-26vdOM",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Bites, Bytes, Kilobytes, Megabytes",
+    "description": "This video learn about digital storage terminology. Digital storage uses the binary system, where everything is saved as ones and zeros.",
+    "link": "https://www.youtube.com/embed/u4P0LOofEFs",
+    "chapterSchema": {
+      "chapterOrderNumber": "2",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:45:00.683Z",
+    "id": "u4P0LOofEFs",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "How many Bytes are in a Gigabyte?",
+    "description": "What is a Gigabyte, Terabyte, or a Petabyte? These terms tell us how much digital information you can store. ",
+    "link": "https://www.youtube.com/embed/lo2McnYcTTQ",
+    "chapterSchema": {
+      "chapterOrderNumber": "2",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:45:15.403Z",
+    "id": "lo2McnYcTTQ",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Unicode UTF-32, UTF-16",
+    "description": "This video explain the encoding formats.",
+    "link": "https://www.youtube.com/embed/uTJoJtNYcaQ",
+    "chapterSchema": {
+      "chapterOrderNumber": "2",
+      "subchapterOrderNumber": "3"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:45:25.846Z",
+    "id": "uTJoJtNYcaQ",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Understanding ASCII and Unicode",
+    "description": "A short tutorial which explains what ASCII and Unicode are, how they work, and what the difference is between them.",
+    "link": "https://www.youtube.com/embed/5aJKKgSEUnY",
+    "chapterSchema": {
+      "chapterOrderNumber": "2",
+      "subchapterOrderNumber": "3"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:45:36.741Z",
+    "id": "5aJKKgSEUnY",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript Variables Explained",
+    "description": "In this video you will learn about the variables let, var and const and their differences from each other with a few simple examples. ",
+    "link": "https://www.youtube.com/embed/J0y6XXdm4KI",
+    "chapterSchema": {
+      "chapterOrderNumber": "3",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:45:50.484Z",
+    "id": "J0y6XXdm4KI",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Proměnné v JavaScriptu",
+    "description": "In this video you will learn about the variables let, var and const and their differences from each other with a few simple examples. ",
+    "link": "https://www.youtube.com/embed/1-Qp3xA36XM",
+    "chapterSchema": {
+      "chapterOrderNumber": "3",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:46:03.975Z",
+    "id": "1-Qp3xA36XM",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Javascript III - proměnné",
+    "description": "How to use variables and what they actually are. In general, but also directly for Javascript.",
+    "link": "https://www.youtube.com/embed/wRns-gHaQhw",
+    "chapterSchema": {
+      "chapterOrderNumber": "3",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:46:14.561Z",
+    "id": "wRns-gHaQhw",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Variables in JavaScript",
+    "description": "This video is about variables and how to work with them. ",
+    "link": "https://www.youtube.com/embed/TOkU5HxES1o",
+    "chapterSchema": {
+      "chapterOrderNumber": "3",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-23T11:46:25.371Z",
+    "id": "TOkU5HxES1o",
+    "tags": [],
     "links": [],
     "rating": 0,
     "numberOfRatings": 0
