@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Box from "@mui/material/Box/Box"
 import { useParams } from 'react-router';
 import { useState, useEffect } from "react";
@@ -9,6 +10,8 @@ import CardMedia from "@mui/material/CardMedia/CardMedia";
 import Rating from "@mui/material/Rating/Rating";
 import CardActionArea from "@mui/material/CardActionArea/CardActionArea";
 import { useNavigate } from "react-router-dom";
+import Fab from "@mui/material/Fab/Fab";
+import AddIcon from '@mui/icons-material/Add';
 
 const SubchapterDetail = () => {
     const { chapterId, subchapterId } = useParams();
@@ -30,7 +33,14 @@ const SubchapterDetail = () => {
         }, [chapterId, subchapterId]
     )
 
-    return <Grid container spacing={2}>
+    const fabStyle = {
+        right: 20,
+        bottom: 20,
+        position: 'fixed'
+    };
+
+
+    return <Box><Grid container spacing={2}>
         {
             videos.map((video) => {
                 return <Grid item xs={3} key={video.id}>
@@ -66,7 +76,11 @@ const SubchapterDetail = () => {
                 </Grid>
             })
         }
-    </Grid>;
+    </Grid>
+        <Fab color="primary" aria-label="add" style={fabStyle}>
+            <AddIcon />
+        </Fab>
+    </Box>;
 }
 
 export default SubchapterDetail

@@ -4,18 +4,19 @@ import CardContent from "@mui/material/CardContent/CardContent";
 import Chip from "@mui/material/Chip/Chip";
 import Grid from "@mui/material/Grid/Grid";
 import Rating from "@mui/material/Rating/Rating";
+import Link from "@mui/material/Link"
 import Typography from "@mui/material/Typography/Typography";
 import React from "react";
 import ReactPlayer from "react-player";
 import { useParams } from 'react-router';
 import { useState, useEffect } from "react";
 import Box from "@mui/material/Box/Box";
-
-
-
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 const VideoDetail = () => {
     const [rating, setRating] = useState(3);
+    const [tags, setTags] = useState([]);
+    const [links, setLinks] = useState([]);
     const [videoDetail, setVideoDetail] = useState({ "tags": [] });
     const { videoId } = useParams();
 
@@ -33,10 +34,51 @@ const VideoDetail = () => {
         });
         getVideoDetail();
     };
+
+    const getTagsAndLinks = async (videoData) => {
+        const tags = videoData.tags;
+        const links = videoData.links;
+
+        const tagData = await fetch('http://localhost:5000/tag/list', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+            },
+        });
+
+        const linkData = await fetch('http://localhost:5000/link');
+
+        const finalLinkData = await linkData.json();
+        const finalTagData = await tagData.json();
+
+        let returnTags = [];
+        let returnLinks = [];
+
+        tags.forEach(tag => {
+            returnTags.push(
+                finalTagData.find(
+                    (element) => element["id"] === tag
+                )
+            )
+        });
+
+        links.forEach(link => {
+            returnLinks.push(
+                finalLinkData.find((element) => element["name"] === link)
+            )
+        });
+
+        setLinks(returnLinks);
+        setTags(returnTags);
+    }
+
     const getVideoDetail = async () => {
         const data = await fetch(`http://localhost:5000/video/${videoId}`);
         const finalData = await data.json();
         setVideoDetail(finalData);
+
+        getTagsAndLinks(finalData);
     }
 
     useEffect(
@@ -46,26 +88,51 @@ const VideoDetail = () => {
         }, [videoId]
     )
 
+    const handleLinkClick = (url) => {
+        window.open(url, "_blank")
+    }
+
+
     return <Box>
         <Typography variant="h4" paddingBottom={2}>
             {videoDetail.name}
         </Typography>
         <Card elevation={5}>
             <Box m={2}>
-                <ReactPlayer url={videoDetail.link}
-                    width={1280}
-                    height={720}
-                    controls />
+                <Grid item key="video-grid-item">
+                    <ReactPlayer url={videoDetail.link}
+                        width={1280}
+                        height={720}
+                        controls />
+                </Grid>
+                <Grid container spacing={1} maxWidth={1280} paddingTop={1}>
+                    {
+                        tags.map((tag, index) => {
+                            return <Grid item key={tag["name"] + index}>
+                                <Chip label={`#${tag["name"]}`} color="primary" />
+                            </Grid>
+                        })
+                    }
+                    {
+                        links.map((link, index) => {
+                            return <Grid item key={link["name"] + index}>
+                                <Link to={{ pathname: "https://example.zendesk.com/hc/en-us/articles/123456789-Privacy-Policies" }} target="_blank" >
+                                    <Chip label={`${link["name"]}`} icon={<OpenInNewIcon />} onClick={() => handleLinkClick(link["link"])} color="success" />
+                                </Link>
+                            </Grid>
+                        })
+                    }
+                </Grid>
             </Box>
             <CardContent>
                 <Typography variant="h5" fontWeight="bold" paddingBottom={1}>Popis</Typography>
                 <Typography variant="body1" paddingBottom={4}>{videoDetail.description}</Typography>
                 <Grid container spacing={2}>
-                    <Grid item xs={2}>
+                    <Grid item xs={2} key="video-detail-rating-title">
                         <Typography variant="h5" fontWeight="bold" paddingBottom={0.5}>Hodnocení</Typography>
                         <Typography>{`${parseFloat(videoDetail.rating).toFixed(2)} (${videoDetail.numberOfRatings} hodnocení)`}</Typography>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={3} key="video-detail-rating">
                         <Typography variant="h5" fontWeight="bold">Ohodnoťte video</Typography>
                         <Rating
                             name="simple-controlled"
@@ -78,18 +145,6 @@ const VideoDetail = () => {
                         />
                     </Grid>
                 </Grid>
-                <Typography variant="h5" fontWeight="bold" paddingTop={2} paddingBottom={1}>Tagy</Typography>
-                <Grid container spacing={1}>
-                    {
-                        videoDetail.tags.map((tag) => {
-                            return <Grid item >
-                                <Chip label={tag} color="primary" />
-                            </Grid>
-                        })
-                    }
-
-                </Grid>
-
             </CardContent>
         </Card>
 
