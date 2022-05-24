@@ -10,8 +10,13 @@
     "state": "active",
     "creationDate": "2022-05-23T11:43:41.030Z",
     "id": "4MsfBokJiSs",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "9ad296bb5fc1f1237bcb475c1480411f",
+      "1e62981ff0ba934f9ae91a565100e7cb"
+    ],
+    "links": [
+      "javascript_basics"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -26,8 +31,14 @@
     "state": "active",
     "creationDate": "2022-05-23T11:43:54.872Z",
     "id": "A3GjzmUoeSs",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "9ad296bb5fc1f1237bcb475c1480411f",
+      "7559ee3f83e1a653bc2d49c648485ad6"
+    ],
+    "links": [
+      "javascript_basics",
+      "first_steps"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -42,8 +53,15 @@
     "state": "active",
     "creationDate": "2022-05-23T11:44:04.019Z",
     "id": "afSbBjAaqeM",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "9ad296bb5fc1f1237bcb475c1480411f",
+      "8ec8a6369829539d13c05f5c0764465f",
+      "aed3079e2aa944be9fe70a4cff9f1dab"
+    ],
+    "links": [
+      "how_the_web_works",
+      "javascript_basics"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
