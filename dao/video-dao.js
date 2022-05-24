@@ -77,6 +77,15 @@ class VideoDao {
     await wf(this._getStorageLocation(), JSON.stringify(videos, null, 2))
     return videos[videoIndex];
   }
+  
+  async rateVideo(id, rating) {
+    let videos = await this._loadAllVideos();
+    const videoIndex = videos.findIndex(b => b.id === id);
+    let ratingSum = (videos[videoIndex].numberOfRatings * videos[videoIndex].rating) + rating;
+    videos[videoIndex].rating = ratingSum / ++videos[videoIndex].numberOfRatings;
+    await wf(this._getStorageLocation(), JSON.stringify(videos, null, 2))
+    return videos[videoIndex];
+  }
 
 
   async deleteVideo(id) {
