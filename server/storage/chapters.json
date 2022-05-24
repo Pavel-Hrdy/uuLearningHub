@@ -2,188 +2,177 @@
     {
         "chapterOrderNumber": "1",
         "name": "Úvod do JavaScript",
-        "subchapters": 
-            [
-                {
-                    "subchapterOrderNumber": "1",
-                    "name": "Představení Javascriptu"
-                }
-            ]
-
+        "subchapters": [
+            {
+                "subchapterOrderNumber": "1",
+                "name": "Představení Javascriptu"
+            }
+        ]
     },
     {
         "chapterOrderNumber": "2",
         "name": "Související principy fungování počítače",
-        "subchapters":
-            [
-                {
-                    "subchapterOrderNumber": "1",
-                    "name ": "Číselné soustavy"
-                },
-                {
-                    "subchapterOrderNumber": "2",
-                    "name ": "Počítačová paměť"
-                },
-                {
-                    "subchapterOrderNumber": "3",
-                    "name ": "Reprezentace dat v paměti počítače"
-                }
-            ]
+        "subchapters": [
+            {
+                "subchapterOrderNumber": "1",
+                "name": "Číselné soustavy"
+            },
+            {
+                "subchapterOrderNumber": "2",
+                "name": "Počítačová paměť"
+            },
+            {
+                "subchapterOrderNumber": "3",
+                "name": "Reprezentace dat v paměti počítače"
+            }
+        ]
     },
     {
         "chapterOrderNumber": "3",
         "name": "Práce s proměnnými",
-        "subchapters": 
-            [
-                {
-                    "subchapterOrderNumber": "1",
-                    "name ": "Definice a použití proměnné"
-                },
-                {
-                    "subchapterOrderNumber": "2",
-                    "name ": "Pojmenování, výrazy, komentáře"
-                }
-            ]
+        "subchapters": [
+            {
+                "subchapterOrderNumber": "1",
+                "name": "Definice a použití proměnné"
+            },
+            {
+                "subchapterOrderNumber": "2",
+                "name": "Pojmenování, výrazy, komentáře"
+            }
+        ]
     },
     {
         "chapterOrderNumber": "4",
         "name": "Úvod do datových typů",
-        "subchapters":
-            [
-                {
-                    "subchapterOrderNumber": "1",
-                    "name ": "Datové typy"
-                },
-                {
-                    "subchapterOrderNumber": "2",
-                    "name ": "String"
-                },
-                {
-                    "subchapterOrderNumber": "3",
-                    "name ": "Number"
-                },
-                {
-                    "subchapterOrderNumber": "4",
-                    "name ": "Boolean"
-                },
-                {
-                    "subchapterOrderNumber": "5",
-                    "name ": "Ostatní"
-                }
-            ]
+        "subchapters": [
+            {
+                "subchapterOrderNumber": "1",
+                "name": "Datové typy"
+            },
+            {
+                "subchapterOrderNumber": "2",
+                "name": "String"
+            },
+            {
+                "subchapterOrderNumber": "3",
+                "name": "Number"
+            },
+            {
+                "subchapterOrderNumber": "4",
+                "name": "Boolean"
+            },
+            {
+                "subchapterOrderNumber": "5",
+                "name": "Ostatní"
+            }
+        ]
     },
     {
         "chapterOrderNumber": "5",
         "name": "Operátory",
-        "subchapters": 
-            [
-                {
-                    "subchapterOrderNumber": "1",
-                    "name ": "Matematické operátory a porovnávání"
-                },
-                {
-                    "subchapterOrderNumber": "2",
-                    "name ": "Logické operace"
-                }
-            ]
+        "subchapters": [
+            {
+                "subchapterOrderNumber": "1",
+                "name": "Matematické operátory a porovnávání"
+            },
+            {
+                "subchapterOrderNumber": "2",
+                "name": "Logické operace"
+            }
+        ]
     },
     {
         "chapterOrderNumber": "6",
         "name": "Řídící struktury",
-        "subchapters":
-            [
-                {
-                    "subchapterOrderNumber": "1",
-                    "name ": "Podmíněné zpracování kódu"
-                },
-                {
-                    "subchapterOrderNumber": "2",
-                    "name ": "Cykly"
-                }
-            ]
+        "subchapters": [
+            {
+                "subchapterOrderNumber": "1",
+                "name": "Podmíněné zpracování kódu"
+            },
+            {
+                "subchapterOrderNumber": "2",
+                "name": "Cykly"
+            }
+        ]
     },
     {
         "chapterOrderNumber": "7",
         "name": "Funkce",
-        "subchapters":
-            [
-                {
-                    "subchapterOrderNumber": "1",
-                    "name ": "Strukturování kódu pomocí funkcí"
-                },
-                {
-                    "subchapterOrderNumber": "2",
-                    "name ": "Rozsah platnosti proměnných"
-                },
-                {
-                    "subchapterOrderNumber": "3",
-                    "name ": "Parametry a návrtové hodnoty funkcí"
-                },
-                {
-                    "subchapterOrderNumber": "4",
-                    "name ": "Funkce jako proměnná"
-                },
-                {
-                    "subchapterOrderNumber": "5",
-                    "name ": "Arrow funkce"
-                }
-            ]
+        "subchapters": [
+            {
+                "subchapterOrderNumber": "1",
+                "name": "Strukturování kódu pomocí funkcí"
+            },
+            {
+                "subchapterOrderNumber": "2",
+                "name": "Rozsah platnosti proměnných"
+            },
+            {
+                "subchapterOrderNumber": "3",
+                "name": "Parametry a návrtové hodnoty funkcí"
+            },
+            {
+                "subchapterOrderNumber": "4",
+                "name": "Funkce jako proměnná"
+            },
+            {
+                "subchapterOrderNumber": "5",
+                "name": "Arrow funkce"
+            }
+        ]
     },
     {
         "chapterOrderNumber": "8",
         "name": "Kontejnery",
-        "subchapters":
-            [
-                {
-                    "subchapterOrderNumber": "1",
-                    "name ": "Pole"
-                },
-                {
-                    "subchapterOrderNumber": "2",
-                    "name ": "Objekt"
-                },
-                {
-                    "subchapterOrderNumber": "3",
-                    "name ": "Mapa a Set"
-                }
-            ]
+        "subchapters": [
+            {
+                "subchapterOrderNumber": "1",
+                "name": "Pole"
+            },
+            {
+                "subchapterOrderNumber": "2",
+                "name": "Objekt"
+            },
+            {
+                "subchapterOrderNumber": "3",
+                "name ": "Mapa a Set"
+            }
+        ]
     },
     {
         "chapterOrderNumber": "9",
         "name": "Datové objekty",
-        "subchapters":
-            [
-                {
-                    "subchapterOrderNumber": "1",
-                    "name ": "String"
-                },
-                {
-                    "subchapterOrderNumber": "2",
-                    "name ": "Regulární výrazy"
-                },
-                {
-                    "subchapterOrderNumber": "3",
-                    "name ": "Number"
-                },
-                {
-                    "subchapterOrderNumber": "4",
-                    "name ": "Datum a čas"
-                }
-            ]
+        "subchapters": [
+            {
+                "subchapterOrderNumber": "1",
+                "name": "String"
+            },
+            {
+                "subchapterOrderNumber": "2",
+                "name": "Regulární výrazy"
+            },
+            {
+                "subchapterOrderNumber": "3",
+                "name": "Number"
+            },
+            {
+                "subchapterOrderNumber": "4",
+                "name": "Datum a čas"
+            }
+        ]
     },
     {
         "chapterOrderNumber": "10",
         "name": "Rekurze",
-        "subchapters":
-            [
-                {
-                    "subchapterOrderNumber": "1",
-                    "name ": "Rekurze"
-                },
-                {
-                    "subchapterOrderNumber": "2",
-                    "name ": "Dynamické programování"
-                }
-            ]
+        "subchapters": [
+            {
+                "subchapterOrderNumber": "1",
+                "name": "Rekurze"
+            },
+            {
+                "subchapterOrderNumber": "2",
+                "name": "Dynamické programování"
+            }
+        ]
     }
 ]

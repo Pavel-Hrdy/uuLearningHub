@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Toolbar from '@mui/material/Toolbar';
@@ -7,20 +7,33 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { Link } from 'react-router-dom';
-import chapters from "../chapters.json"
 import Divider from '@mui/material/Divider/Divider';
+import { Collapse, ListSubheader } from '@mui/material';
+import { useState, useEffect } from "react";
+import { ExpandLess, ExpandMore } from '@mui/icons-material';
 const drawerWidth = 240;
 
-const CustomDrawer = () =>
-(
-    <Drawer
+const CustomDrawer = () => {
+    const [areCollapsed, setCollapse] = useState({});
+    const [chapters, setChapters] = useState([]);
+    const addChapters = async () => {
+        const data = await fetch("http://localhost:5000/chapter");
+        const finalData = await data.json();
+        setChapters(finalData);
+    }
+    useEffect(
+        () => {
+            addChapters();
+        }, []
+    )
+
+    return <Drawer
         variant="permanent"
         sx={{
             width: drawerWidth,
             flexShrink: 0,
             [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box' },
-        }}
-    >
+        }}>
         <Toolbar />
         <Box sx={{ overflow: 'auto' }}>
             <List>
@@ -34,27 +47,26 @@ const CustomDrawer = () =>
 
             {chapters.map((chapter, index) => (
                 <List subheader={
-                    <ListItem key={index} disablePadding>
-                        <ListItemButton component={Link} to={"/chapter/" + chapter.id} style={{ fontWeight: 'bold' }}>
-                            {chapter.title}
-                        </ListItemButton>
-                    </ListItem>
+                    <ListItemButton key={index + 'title'} onClick={() => setCollapse({ ...areCollapsed, [chapter.chapterOrderNumber]: !areCollapsed[chapter.chapterOrderNumber] })}  >
+                        <ListItemText key={index + 'titleText'} primary={chapter.name} primaryTypographyProps={{ style: { fontWeight: 'bold' } }} />
+                        {areCollapsed[chapter.chapterOrderNumber] ? <ExpandLess /> : <ExpandMore />}
+                    </ListItemButton>
                 }>
-                    {
-                        chapter.subchapters.map((subchapter, index) => (
-                            <ListItem key={index} disablePadding>
-                                <ListItemButton component={Link} to={"/chapter/" + chapter.id + '/' + subchapter.id}>
-                                    <ListItemText primary={subchapter.title} />
-                                </ListItemButton>
-                            </ListItem>
-                        ))
-                    }
-
+                    <Collapse in={areCollapsed[chapter.chapterOrderNumber]} timeout="auto" unmountOnExit>
+                        {
+                            chapter.subchapters.map((subchapter, subchapterIndex) => (
+                                <ListItem key={subchapterIndex + subchapter.subchapterOrderNumber} disablePadding>
+                                    <ListItemButton key={subchapterIndex + subchapter.subchapterOrderNumber + 'button'} component={Link} to={"/chapter/" + chapter.chapterOrderNumber + '/' + subchapter.subchapterOrderNumber}>
+                                        <ListItemText primary={subchapter.name} />
+                                    </ListItemButton>
+                                </ListItem>
+                            ))
+                        }
+                    </Collapse>
                 </List>
             ))}
-
-        </Box>
-    </Drawer>
-);
+        </Box >
+    </Drawer >
+};
 
 export default CustomDrawer
