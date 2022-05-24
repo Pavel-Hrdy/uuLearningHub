@@ -1,66 +1,72 @@
+import Box from "@mui/material/Box/Box"
+import { useParams } from 'react-router';
+import { useState, useEffect } from "react";
+import Grid from "@mui/material/Grid/Grid";
 import Card from "@mui/material/Card/Card";
 import CardContent from "@mui/material/CardContent/CardContent";
-import Chip from "@mui/material/Chip/Chip";
-import Grid from "@mui/material/Grid/Grid";
-import Rating from "@mui/material/Rating/Rating";
 import Typography from "@mui/material/Typography/Typography";
-import React from "react";
-import ReactPlayer from "react-player";
-
-const { default: Box } = require("@mui/material/Box/Box");
-
-
+import CardMedia from "@mui/material/CardMedia/CardMedia";
+import Rating from "@mui/material/Rating/Rating";
+import CardActionArea from "@mui/material/CardActionArea/CardActionArea";
+import { useNavigate } from "react-router-dom";
 
 const SubchapterDetail = () => {
+    const { chapterId, subchapterId } = useParams();
+    const [videos, setVideos] = useState([]);
+    let navigate = useNavigate();
+    const routeChange = (videoId) => {
+        let path = `/video/${videoId}`;
+        navigate(path);
+    }
 
-    const [value, setValue] = React.useState(2);
+    useEffect(
+        () => {
+            const getDetails = async () => {
+                const data = await fetch("http://localhost:5000/video/?chapter=" + chapterId + '-' + subchapterId);
+                const finalData = await data.json();
+                setVideos(finalData);
+            }
+            getDetails();
+        }, [chapterId, subchapterId]
+    )
 
-    return <Box>
-        <Typography variant="h4" paddingBottom={2}>
-            JavaScript I.
-        </Typography>
-
-        <Card elevation={5}>
-            <Box m={2}>
-                <ReactPlayer url="https://www.youtube.com/watch?v=BwuLxPH8IDs"
-                    width={1280}
-                    height={720}
-                    controls />
-            </Box>
-
-            <CardContent>
-                <Grid container spacing={2}>
-                    <Grid item xs={2}>
-                        <Typography variant="h5" fontWeight="bold" paddingBottom={0.5}>Hodnocení:</Typography>
-                        <Typography>4,5 (850 hodnocení)</Typography>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <Typography variant="h5" fontWeight="bold">Ohodnoťte video</Typography>
-                        <Rating
-                            name="simple-controlled"
-                            value={value}
-                            size="large"
-                            onChange={(event, newValue) => {
-                                setValue(newValue);
-                            }}
-                        />
-                    </Grid>
+    return <Grid container spacing={2}>
+        {
+            videos.map((video) => {
+                return <Grid item xs={3} key={video.id}>
+                    <Card elevation={4}>
+                        <CardActionArea onClick={() => routeChange(video.id)}>
+                            <CardMedia
+                                component="img"
+                                height="140"
+                                image={`http://img.youtube.com/vi/${video.id}/0.jpg`}
+                                alt="green iguana"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    {video.name}
+                                </Typography>
+                                <Box display="flex">
+                                    <Rating readOnly
+                                        name="read-only"
+                                        value={video.rating}
+                                        size="small"
+                                    />
+                                    {(
+                                        <Box sx={{ ml: 1 }}>
+                                            <Typography variant="body2">
+                                                {video.numberOfRatings + ' hodnocení'}
+                                            </Typography>
+                                        </Box>
+                                    )}
+                                </Box>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
                 </Grid>
-                <Typography variant="h5" fontWeight="bold" paddingTop={2} paddingBottom={1}>Tagy</Typography>
-                <Grid container spacing={1}>
-                    <Grid item >
-                        <Chip label="Programování" color="primary" />
-                    </Grid>
-                    <Grid item>
-                        <Chip label="Zábava" color="primary" />
-                    </Grid>
-                </Grid>
-
-            </CardContent>
-        </Card>
-
-
-    </Box >
+            })
+        }
+    </Grid>;
 }
 
 export default SubchapterDetail
