@@ -25,16 +25,16 @@ async function GetAbl(req, res) {
       searchedObject = subchapter;
     }
     if (!searchedObject) {
-      res.status(400).send(
-        "Chapter number doesn't exist!"
-      )
+      return res.status(400).json({
+        "error": "Chapter number doesn't exist!"
+    })
     } else {
-      res.send(searchedObject);
+      return res.json(searchedObject);
     }
 
 
   } catch (e) {
-    res.status(500).json({
+    return res.status(500).json({
       "error": e.message
       }
     )

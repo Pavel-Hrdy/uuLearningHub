@@ -13,12 +13,14 @@ async function GetAbl(req, res) {
     let name = req.params.name;
     const link = await linkDao.getLink(name);
     if (!link) {
-      res.status(400).send({error: `Link with name '${name}' doesn't exist.`});
+      return res.status(400).json({
+        "error": `Link with name '${name}' doesn't exist.`
+      });
     }
-    res.json(link);
+    return res.json(link);
 
   } catch (e) {
-    res.status(500).json({
+    return res.status(500).json({
       "error": e.message
     })
   }

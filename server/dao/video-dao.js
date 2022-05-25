@@ -18,7 +18,7 @@ class VideoDao {
   async createVideo(video) {
     let videos = await this._loadAllVideos();
     if (videos.find(b =>  b.id === video.id)) {
-      throw new Error(`This video with ${video.id} already existaś!`);
+      throw new Error(`Video with ID '${video.id}' already exists!`);
     }
     videos.push(video)
     await wf(this._getStorageLocation(), JSON.stringify(videos, null, 2));
