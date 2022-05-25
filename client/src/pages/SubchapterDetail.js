@@ -12,10 +12,21 @@ import CardActionArea from "@mui/material/CardActionArea/CardActionArea";
 import { useNavigate } from "react-router-dom";
 import Fab from "@mui/material/Fab/Fab";
 import AddIcon from '@mui/icons-material/Add';
+import AddVideoDialog from "components/AddVideoDialog";
 
 const SubchapterDetail = () => {
     const { chapterId, subchapterId } = useParams();
     const [videos, setVideos] = useState([]);
+    const [openAddVideoDailog, setOpenAddVideoDialog] = useState(false);
+
+    const handleClickOpenAddVideoDialog = () => {
+        setOpenAddVideoDialog(true);
+        console.log('TRUE')
+    };
+
+    const handleCloseAddVideoDialog = () => {
+        setOpenAddVideoDialog(false);
+    };
     let navigate = useNavigate();
     const routeChange = (videoId) => {
         let path = `/video/${videoId}`;
@@ -77,10 +88,13 @@ const SubchapterDetail = () => {
             })
         }
     </Grid>
-        <Fab color="primary" aria-label="add" style={fabStyle}>
+        <Fab color="primary" aria-label="add" style={fabStyle} onClick={handleClickOpenAddVideoDialog}>
             <AddIcon />
         </Fab>
+        <AddVideoDialog open={openAddVideoDailog} handleClose={() => handleCloseAddVideoDialog()} />
     </Box>;
 }
+
+
 
 export default SubchapterDetail
