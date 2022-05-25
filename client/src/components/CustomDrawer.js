@@ -14,7 +14,7 @@ import { ExpandLess, ExpandMore } from '@mui/icons-material';
 const drawerWidth = 240;
 
 const CustomDrawer = () => {
-    const [areCollapsed, setCollapse] = useState({});
+    const [selectedChapter, setChapter] = useState('');
     const [chapters, setChapters] = useState([]);
     const addChapters = async () => {
         const data = await fetch("http://localhost:5000/chapter");
@@ -26,6 +26,10 @@ const CustomDrawer = () => {
             addChapters();
         }, []
     )
+
+    const handleChapterClick = (chapterId) => {
+        setChapter(selectedChapter === chapterId ? '' : chapterId);
+    };
 
     return <Drawer
         variant="permanent"
@@ -47,12 +51,12 @@ const CustomDrawer = () => {
 
             {chapters.map((chapter, index) => (
                 <List subheader={
-                    <ListItemButton key={index + 'title'} onClick={() => setCollapse({ ...areCollapsed, [chapter.chapterOrderNumber]: !areCollapsed[chapter.chapterOrderNumber] })}  >
+                    <ListItemButton key={index + 'title'} onClick={() => handleChapterClick(chapter.chapterOrderNumber)}  >
                         <ListItemText key={index + 'titleText'} primary={chapter.name} primaryTypographyProps={{ style: { fontWeight: 'bold' } }} />
-                        {areCollapsed[chapter.chapterOrderNumber] ? <ExpandLess /> : <ExpandMore />}
+                        {selectedChapter === chapter.chapterOrderNumber ? <ExpandLess /> : <ExpandMore />}
                     </ListItemButton>
                 }>
-                    <Collapse in={areCollapsed[chapter.chapterOrderNumber]} timeout="auto" unmountOnExit>
+                    <Collapse in={selectedChapter === chapter.chapterOrderNumber} timeout="auto" unmountOnExit>
                         {
                             chapter.subchapters.map((subchapter, subchapterIndex) => (
                                 <ListItem key={subchapterIndex + subchapter.subchapterOrderNumber} disablePadding>
