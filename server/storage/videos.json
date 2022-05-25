@@ -240,5 +240,885 @@
     "links": [],
     "rating": 0,
     "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript Recursion Examples",
+    "description": "Finding JavaScript recursion examples that are applicable to real-life coding situations and not just math problems can be difficult. With Javascript, this tutorial introduces the concept of recursion and provides both standard and real-life examples for you to learn from.",
+    "link": "https://www.youtube.com/embed/Q0alTGQ-lXk",
+    "chapterSchema": {
+      "chapterOrderNumber": "10",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:40:51.659Z",
+    "id": "Q0alTGQ-lXk",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Best Javascript Recursion Explanation on YouTube",
+    "description": "What is recursion? The process in which a function calls itself is called recursion. The corresponding function is called a recursive function.",
+    "link": "https://www.youtube.com/embed/LteNqj4DFD8",
+    "chapterSchema": {
+      "chapterOrderNumber": "10",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:41:01.905Z",
+    "id": "LteNqj4DFD8",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "How to use the JS Date object ",
+    "description": "In this lesson let's learn all about the Date object.",
+    "link": "https://www.youtube.com/embed/-H6xNrnFI80",
+    "chapterSchema": {
+      "chapterOrderNumber": "9",
+      "subchapterOrderNumber": "4"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:41:10.041Z",
+    "id": "-H6xNrnFI80",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "How to Display Current Date and Time in Javascript",
+    "description": "In this video tutorial, you will learn how to display current date and time in javascript.",
+    "link": "https://www.youtube.com/embed/-eRsWqwcPuk",
+    "chapterSchema": {
+      "chapterOrderNumber": "9",
+      "subchapterOrderNumber": "4"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:41:18.464Z",
+    "id": "-eRsWqwcPuk",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Number Instance Methods and Math Object",
+    "description": "In this video you learn about number object in JavaScript.",
+    "link": "https://www.youtube.com/embed/HGSV8KR1W-Q",
+    "chapterSchema": {
+      "chapterOrderNumber": "9",
+      "subchapterOrderNumber": "3"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:41:26.150Z",
+    "id": "HGSV8KR1W-Q",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Number methods and math objects in JavaScript",
+    "description": "Number methods and math objects in JavaScript - Learn JavaScript front-end programming. In this episode I decided to combine 'number methods' with 'math objects' since both of these are quite short to explain about, and they are both related to numbers (integers) in JavaScript.",
+    "link": "https://www.youtube.com/embed/zq9CF9G3Isw",
+    "chapterSchema": {
+      "chapterOrderNumber": "9",
+      "subchapterOrderNumber": "3"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:41:33.130Z",
+    "id": "zq9CF9G3Isw",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Basics of Regular Expressions (Regex) ",
+    "description": "In this video you will be going through the basics of Regular Expressions (or Regex) in JavaScript. ",
+    "link": "https://www.youtube.com/embed/ArxOzeAONHg",
+    "chapterSchema": {
+      "chapterOrderNumber": "9",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:41:40.561Z",
+    "id": "ArxOzeAONHg",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Regular Expressions (Regex) in JavaScript ",
+    "description": "Learn the basics of using regular expressions / regex in your JavaScript applications.",
+    "link": "https://www.youtube.com/embed/909NfO1St0A",
+    "chapterSchema": {
+      "chapterOrderNumber": "9",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:41:50.655Z",
+    "id": "909NfO1St0A",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript String Object ",
+    "description": "In this video, I discuss the JavaScript String object, and how to use it to modify and manipulate text in JavaScript. The functions / properties covered are indexOf(), substring(), and length. I look at the p5.js specific split(), splitTokens(), and join(). ",
+    "link": "https://www.youtube.com/embed/DcoAjEZYies",
+    "chapterSchema": {
+      "chapterOrderNumber": "9",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:41:55.919Z",
+    "id": "DcoAjEZYies",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript String Object",
+    "description": "The JavaScript String object is a global object that is used to store strings. A string is a sequence of letters, numbers, special characters and arithmetic values or combination of all.",
+    "link": "https://www.youtube.com/embed/q6g5fbLVF-I",
+    "chapterSchema": {
+      "chapterOrderNumber": "9",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:42:04.373Z",
+    "id": "q6g5fbLVF-I",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Map, Set, WeakMap and WeakSet",
+    "description": "In this video you learn about Map, WeakMap and Set, WeaktSet in JavaScript. Video is trying to explain with those JavaScript objects with real use case function.",
+    "link": "https://www.youtube.com/embed/rMmnFYvqKtw",
+    "chapterSchema": {
+      "chapterOrderNumber": "8",
+      "subchapterOrderNumber": "3"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:42:11.943Z",
+    "id": "rMmnFYvqKtw",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "The differences between Maps and Sets",
+    "description": "Maps are similar to Objects. Sets are similar to Arrays. Both provide you with Iterators which means that both can be used with a for...of loop.",
+    "link": "https://www.youtube.com/embed/m4abICrldQI",
+    "chapterSchema": {
+      "chapterOrderNumber": "8",
+      "subchapterOrderNumber": "3"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:42:19.330Z",
+    "id": "m4abICrldQI",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Objects in JavaScript",
+    "description": "In this JavaScript tutorial you will learn about JavaScript Object Oriented Programming, which is a much more efficient way of creating JavaScript code. ",
+    "link": "https://www.youtube.com/embed/S1dWe3f2zm0",
+    "chapterSchema": {
+      "chapterOrderNumber": "8",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:42:25.845Z",
+    "id": "S1dWe3f2zm0",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Object-oriented Programming in JavaScript",
+    "description": "Object-oriented programming in JavaScript: learn all about objects, prototypes, prototypical inheritance, this and more. ",
+    "link": "https://www.youtube.com/embed/PFmuCDHHpwk",
+    "chapterSchema": {
+      "chapterOrderNumber": "8",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:42:33.417Z",
+    "id": "PFmuCDHHpwk",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "What are objects in JavaScript",
+    "description": "In this JavaScript tutorial you will learn about JavaScript Object Oriented Programming, which is a much more efficient way of creating JavaScript code. We will also look at how to create JavaScript objects and move towards learning about object constructors.",
+    "link": "https://www.youtube.com/embed/4uVwGw317QM",
+    "chapterSchema": {
+      "chapterOrderNumber": "8",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:42:39.589Z",
+    "id": "4uVwGw317QM",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Array method ",
+    "description": "In this tutorial we're going to learn about the JavaScript Array Method and how we can use it to call a provided function once for each element inside the array.",
+    "link": "https://www.youtube.com/embed/8FmBEN0XZyI",
+    "chapterSchema": {
+      "chapterOrderNumber": "8",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:42:47.073Z",
+    "id": "8FmBEN0XZyI",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript Array",
+    "description": "In this tutorial we're going to learn about the JavaScript Array Method and how we can use it to call a provided function once for each element inside the array.",
+    "link": "https://www.youtube.com/embed/oigfaZ5ApsM",
+    "chapterSchema": {
+      "chapterOrderNumber": "8",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:42:54.312Z",
+    "id": "oigfaZ5ApsM",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Arrow function",
+    "description": "In this video we will be looking at arrow functions in the syntax",
+    "link": "https://www.youtube.com/embed/u4URamXstM0",
+    "chapterSchema": {
+      "chapterOrderNumber": "7",
+      "subchapterOrderNumber": "5"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:43:04.254Z",
+    "id": "u4URamXstM0",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Arrow Functions Tutorial",
+    "description": "In this video, I will explain arrow functions in JavaScript. Arrow functions make your code shorter and more concise. They also handle the scoping of \"this\" in a more logical way than regular functions.",
+    "link": "https://www.youtube.com/embed/NAN7U3MrX6o",
+    "chapterSchema": {
+      "chapterOrderNumber": "7",
+      "subchapterOrderNumber": "5"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:43:11.938Z",
+    "id": "NAN7U3MrX6o",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Arrow function in JavaScript",
+    "description": "In this video you will eplain arrow function in JavaScript. ",
+    "link": "https://www.youtube.com/embed/tJOJPealurs",
+    "chapterSchema": {
+      "chapterOrderNumber": "7",
+      "subchapterOrderNumber": "5"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:43:26.161Z",
+    "id": "tJOJPealurs",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "What is anonymous function? Understand in brief",
+    "description": "In this tutorial, we will learn what is an anonymous function.",
+    "link": "https://www.youtube.com/embed/sOhJmoQ-TTY",
+    "chapterSchema": {
+      "chapterOrderNumber": "7",
+      "subchapterOrderNumber": "4"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:43:33.507Z",
+    "id": "sOhJmoQ-TTY",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Passing Variables Through Functions",
+    "description": "In this JavaScript tutorial, I will be showing you how to pass a variable through a function so that it can be used within the function. I will also show you what a return statement does and how you can use it.",
+    "link": "https://www.youtube.com/embed/N3BuFqWWFi0",
+    "chapterSchema": {
+      "chapterOrderNumber": "7",
+      "subchapterOrderNumber": "4"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:43:41.037Z",
+    "id": "N3BuFqWWFi0",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Functions - Parameters and Return Values",
+    "description": "In this video you will learn about functions and paramters.",
+    "link": "https://www.youtube.com/embed/1iAvhS8niM8",
+    "chapterSchema": {
+      "chapterOrderNumber": "7",
+      "subchapterOrderNumber": "3"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:43:47.573Z",
+    "id": "1iAvhS8niM8",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Javascript Functions & Parameters",
+    "description": "In this video you will learn about functions and paramters.",
+    "link": "https://www.youtube.com/embed/xjAu2Y2nJ34",
+    "chapterSchema": {
+      "chapterOrderNumber": "7",
+      "subchapterOrderNumber": "3"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:43:53.703Z",
+    "id": "xjAu2Y2nJ34",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "What is Scope in JavaScript?",
+    "description": "This tutorial is explaining the 3 different types of scopes in JavaScript: global scope, function scope and block scope. ",
+    "link": "https://www.youtube.com/embed/bD-62OMzni0",
+    "chapterSchema": {
+      "chapterOrderNumber": "7",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:44:01.915Z",
+    "id": "bD-62OMzni0",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Function Scope & Block Scope",
+    "description": "Let's look at the difference between function and block scope within JavaScript. Now we have the 'let' keyword we can use it to our advantage when using block scope!",
+    "link": "https://www.youtube.com/embed/sIRMWFuad00",
+    "chapterSchema": {
+      "chapterOrderNumber": "7",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:44:09.140Z",
+    "id": "sIRMWFuad00",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript Scopes ",
+    "description": "In this JavaScript tutorial you will learn about JavaScript scopes. In JavaScript we have two different types of scopes called the global scope and the local scope.",
+    "link": "https://www.youtube.com/embed/hTU1OSbnov8",
+    "chapterSchema": {
+      "chapterOrderNumber": "7",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:44:16.832Z",
+    "id": "hTU1OSbnov8",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "The call method in JavaScript",
+    "description": "The 'call' method in JavaScript allows you to call a function or method like normal with the extra functionality of specifying the value for this 'this' keyword - or the current object.",
+    "link": "https://www.youtube.com/embed/CCb96W92A54",
+    "chapterSchema": {
+      "chapterOrderNumber": "7",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:44:24.184Z",
+    "id": "CCb96W92A54",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript Functions",
+    "description": "In this video you will learn about function in JavaScript. ",
+    "link": "https://www.youtube.com/embed/N8ap4k_1QEQ",
+    "chapterSchema": {
+      "chapterOrderNumber": "7",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:44:30.408Z",
+    "id": "N8ap4k_1QEQ",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript for loop and while loop",
+    "description": "In this video you will learn about all of the different types of loops in JavaScript. ",
+    "link": "https://www.youtube.com/embed/leMzF0esu38",
+    "chapterSchema": {
+      "chapterOrderNumber": "6",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:44:38.864Z",
+    "id": "leMzF0esu38",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript Lops ",
+    "description": "In this video you will learn about all of the different types of loops in JavaScript. ",
+    "link": "https://www.youtube.com/embed/Kn06785pkJg",
+    "chapterSchema": {
+      "chapterOrderNumber": "6",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:44:44.432Z",
+    "id": "Kn06785pkJg",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript loops",
+    "description": "Learn how to create loops using JavaScript.",
+    "link": "https://www.youtube.com/embed/s9wW2PpJsmQ",
+    "chapterSchema": {
+      "chapterOrderNumber": "6",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:44:52.068Z",
+    "id": "s9wW2PpJsmQ",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "If, Else If, Else - Processing Tutorial",
+    "description": "This video covers how a conditional statement works in Processing with \"if\", \"else if \" and \"else\"",
+    "link": "https://www.youtube.com/embed/mVq7Ms01RjA",
+    "chapterSchema": {
+      "chapterOrderNumber": "6",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:45:00.455Z",
+    "id": "mVq7Ms01RjA",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Conditional Statements If Else in JavaScript",
+    "description": "Learn how to create basic logic and program flow using JavaScript conditionals.",
+    "link": "https://www.youtube.com/embed/o_iO9WuoWaM",
+    "chapterSchema": {
+      "chapterOrderNumber": "6",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:45:08.847Z",
+    "id": "o_iO9WuoWaM",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Create REACTIVE code with conditional statements",
+    "description": "Learn how to create basic logic and program flow using JavaScript conditionals.",
+    "link": "https://www.youtube.com/embed/1oxUioUL1Qo",
+    "chapterSchema": {
+      "chapterOrderNumber": "6",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:45:14.945Z",
+    "id": "1oxUioUL1Qo",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Logical Operators in JavaScript",
+    "description": "In this tutorial you will learn abou AND, OR, NOT operators. ",
+    "link": "https://www.youtube.com/embed/-L41L0IZuv4",
+    "chapterSchema": {
+      "chapterOrderNumber": "5",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:45:20.543Z",
+    "id": "-L41L0IZuv4",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Logical Operators in JavaScript",
+    "description": "In this tutorial you will learn abou AND, OR, NOT operators. ",
+    "link": "https://www.youtube.com/embed/uuRJ1aCj8Ro",
+    "chapterSchema": {
+      "chapterOrderNumber": "5",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:45:26.389Z",
+    "id": "uuRJ1aCj8Ro",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Logical operators",
+    "description": "In this JavaScript tutorial for beginners, I'll show you the two logical operators we can use with our control flow statements (such as if statements and loops). The two operators are the AND operator ( && ) and the OR operator ( || ) .",
+    "link": "https://www.youtube.com/embed/mbT7sSmVUS8",
+    "chapterSchema": {
+      "chapterOrderNumber": "5",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:45:34.247Z",
+    "id": "mbT7sSmVUS8",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Arithmetic Operators, Precedence, Associativity",
+    "description": "In this lesson you will learn about arithmetic operators, which are essentially the mathmatical symbols we use in programming.",
+    "link": "https://www.youtube.com/embed/2v2oi-kX59o",
+    "chapterSchema": {
+      "chapterOrderNumber": "5",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:45:41.253Z",
+    "id": "2v2oi-kX59o",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Základní operátory v JavaScriptu",
+    "description": "In this lesson you will learn about arithmetic operators, which are essentially the mathmatical symbols we use in programming.",
+    "link": "https://www.youtube.com/embed/w_hkQgPTMDw",
+    "chapterSchema": {
+      "chapterOrderNumber": "5",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:45:47.392Z",
+    "id": "w_hkQgPTMDw",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "What Are Arithmetic Operators In JavaScript",
+    "description": "In this lesson you will learn about arithmetic operators, which are essentially the mathmatical symbols we use in programming.",
+    "link": "https://www.youtube.com/embed/Z9GdzsJgFW4",
+    "chapterSchema": {
+      "chapterOrderNumber": "5",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:45:53.557Z",
+    "id": "Z9GdzsJgFW4",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript Symbols Explained with Examples",
+    "description": "In this video you will learn about the symbol data type. How to create and use it.",
+    "link": "https://www.youtube.com/embed/8Vlny0Z7XPA",
+    "chapterSchema": {
+      "chapterOrderNumber": "4",
+      "subchapterOrderNumber": "5"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:46:00.168Z",
+    "id": "8Vlny0Z7XPA",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Difference Between Primitives and Objects",
+    "description": "In this video you will see the differences between primitives ans object data type",
+    "link": "https://www.youtube.com/embed/XuTaSCHOiu0",
+    "chapterSchema": {
+      "chapterOrderNumber": "4",
+      "subchapterOrderNumber": "5"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:46:06.002Z",
+    "id": "XuTaSCHOiu0",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Understand Javascript Variable Datatypes Null, Undefined, and NaN.",
+    "description": "In this video you will see the main differences between the datatypes Null, Undefined, and NaN.",
+    "link": "https://www.youtube.com/embed/EO2aanpSXpM",
+    "chapterSchema": {
+      "chapterOrderNumber": "4",
+      "subchapterOrderNumber": "5"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:46:11.748Z",
+    "id": "EO2aanpSXpM",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Booleans in JavaScript aka True and False",
+    "description": "In this video you will learn about the boolean data type. How to create and use it.",
+    "link": "https://www.youtube.com/embed/0Z6Vy3ppCyk",
+    "chapterSchema": {
+      "chapterOrderNumber": "4",
+      "subchapterOrderNumber": "4"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:46:19.979Z",
+    "id": "0Z6Vy3ppCyk",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Boolean ddata type",
+    "description": "In this video you will learn about the boolean data type. How to create and use it.",
+    "link": "https://www.youtube.com/embed/S1coFOL6oGI",
+    "chapterSchema": {
+      "chapterOrderNumber": "4",
+      "subchapterOrderNumber": "4"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:46:26.021Z",
+    "id": "S1coFOL6oGI",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript Number data type and global Number object explained",
+    "description": "In this video you will learn about the number data type. How to create and use it.",
+    "link": "https://www.youtube.com/embed/ALUdVqVsgiM",
+    "chapterSchema": {
+      "chapterOrderNumber": "4",
+      "subchapterOrderNumber": "3"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:46:34.810Z",
+    "id": "ALUdVqVsgiM",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Number Data Type",
+    "description": "In this video you will learn about the number data type. How to create and use it.",
+    "link": "https://www.youtube.com/embed/OLS7opbtKwE",
+    "chapterSchema": {
+      "chapterOrderNumber": "4",
+      "subchapterOrderNumber": "3"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:46:39.828Z",
+    "id": "OLS7opbtKwE",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "String Data Type",
+    "description": "In this video you will learn about the string data type. How to create and use it.",
+    "link": "https://www.youtube.com/embed/1PukU1DrIts",
+    "chapterSchema": {
+      "chapterOrderNumber": "4",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:46:46.361Z",
+    "id": "1PukU1DrIts",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript string",
+    "description": "In this video you will learn about the string data type. How to create and use it.",
+    "link": "https://www.youtube.com/embed/09BwruU4kiY",
+    "chapterSchema": {
+      "chapterOrderNumber": "4",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:46:53.865Z",
+    "id": "09BwruU4kiY",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Data types in JavaScript",
+    "description": "This video learn about primitives data types.",
+    "link": "https://www.youtube.com/embed/nCwQY8inRvU",
+    "chapterSchema": {
+      "chapterOrderNumber": "4",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:47:00.800Z",
+    "id": "nCwQY8inRvU",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Data Types",
+    "description": "Learn about the seven data types in JavaScript.",
+    "link": "https://www.youtube.com/embed/808eYu9B9Yw",
+    "chapterSchema": {
+      "chapterOrderNumber": "4",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:47:06.878Z",
+    "id": "808eYu9B9Yw",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JavaScript Comments",
+    "description": "Make a JavaScript comment with this video tutorial. This basic video shows how to leave a single line comment or a multi line comment. It works in an HTML file or an external JS file.",
+    "link": "https://www.youtube.com/embed/8w0sxLVZLE4",
+    "chapterSchema": {
+      "chapterOrderNumber": "3",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:47:12.955Z",
+    "id": "8w0sxLVZLE4",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "How to create Variables in Javascript",
+    "description": "In this JavaScript tutorial I will teach you about JavaScript variables and how we can use them to store data.",
+    "link": "https://www.youtube.com/embed/9aGIAL16DL4",
+    "chapterSchema": {
+      "chapterOrderNumber": "3",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:47:21.687Z",
+    "id": "9aGIAL16DL4",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Variable and property names in JS",
+    "description": "This video is about how to use the rule for naming variables and property in JavaScript.",
+    "link": "https://www.youtube.com/embed/ILx2rvQDLDk",
+    "chapterSchema": {
+      "chapterOrderNumber": "3",
+      "subchapterOrderNumber": "2"
+    },
+    "state": "active",
+    "creationDate": "2022-05-25T12:47:27.623Z",
+    "id": "ILx2rvQDLDk",
+    "tags": [],
+    "links": [],
+    "rating": 0,
+    "numberOfRatings": 0
   }
 ]
