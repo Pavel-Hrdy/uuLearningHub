@@ -39,16 +39,16 @@ async function CreateAbl(req, res) {
       name = name.toLowerCase().split(" ").join("_");
       req.body.name = name;
       let link = await linkDao.createLink(req.body);
-      res.json(link);
+      return res.json(link);
     } else {
-      res.status(400).send({
+      return res.status(400).json({
         errorMessage: "Validation of input failed.",
         params: req.body,
         reason: ajv.errors
       })
     }
   } catch (e) {
-    res.status(500).json({
+    return res.status(500).json({
       "error": e.message,
     })
   }

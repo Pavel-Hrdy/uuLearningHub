@@ -10,10 +10,10 @@ const chapterDao = new ChapterDao(path.join(__dirname, "..", "..", "storage", "c
 async function ListAbl(req, res) {
   try {
       const chapters = await chapterDao.getAllChapters();
-      res.json(chapters)
+      return res.json(chapters)
   }
   catch (e) {
-    res.status(500).json({
+    return res.status(500).json({
       "error": e.message
       }
     )

@@ -83,7 +83,7 @@ async function CreateAbl(req, res) {
       // validates the link
       if (!matchArr) {
         okForUpdate = false;
-        res.status(400).send({
+        return res.status(400).json({
           "error": "The link is not valid!"
         })
       } else {
@@ -100,7 +100,7 @@ async function CreateAbl(req, res) {
         videoSchema.chapterSchema.subchapterOrderNumber = subchapterSchema.subchapterOrderNumber;
       } else {
         okForUpdate = false;
-        res.status(400).send({
+        return res.status(400).json({
           "error": "Chapter doesn't exist!"
         })
       }
@@ -110,7 +110,9 @@ async function CreateAbl(req, res) {
       for (let tag of videoSchema.tags) {
         if (! await tagDao.getTag(tag)) {
           okForUpdate = false;
-          res.status(400).send("Tags are invalid!");
+          return res.status(400).json({
+            "error": "Tags are invalid!"
+          });
         }
       }
 
@@ -119,7 +121,9 @@ async function CreateAbl(req, res) {
       for (let link of videoSchema.links) {
         if (!await linkDao.getLink(link)) {
           okForUpdate = false;
-          res.status(400).send("Links are invalid!");
+          return res.status(400).json({
+            "error": "Links are invalid!"
+          });
         }
       }
 
@@ -127,7 +131,9 @@ async function CreateAbl(req, res) {
       if (videoSchema.state) {
         if (videoSchema.state !== "active" && videoSchema.state !== "passive") {
           okForUpdate = false;
-          res.status(400).send("Status is invalid!");
+          return res.status(400).json({
+            "error": "Status is invalid!"
+          });
         }
       } 
 
@@ -137,22 +143,22 @@ async function CreateAbl(req, res) {
       // adding video to the DB if everything is fine
       if (okForUpdate) {
         let video = await videoDao.createVideo(videoSchema);
-        res.json(video);
+        return res.json(video);
       }
 
     // JSON Schema validation failed
     } else {
-      res.status(400).send({
-        errorMessage: "Validation of input failed.",
-        params: req.body,
-        reason: ajv.errors
+      return res.status(400).json({
+        "errorMessage": "Validation of input failed.",
+        "params": req.body,
+        "reason": ajv.errors
       })
     }
   
 
   //server Error
   } catch (e) {
-    res.status(500).json({
+    return res.status(500).json({
       "error": e.message,
     })
   }

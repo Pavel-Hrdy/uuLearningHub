@@ -18,7 +18,7 @@ class VideoDao {
   async createVideo(video) {
     let videos = await this._loadAllVideos();
     if (videos.find(b =>  b.id === video.id)) {
-      throw new Error(`This video with ${video.id} already existaś!`);
+      throw new Error(`Video with ID '${video.id}' already exists!`);
     }
     videos.push(video)
     await wf(this._getStorageLocation(), JSON.stringify(videos, null, 2));
@@ -92,11 +92,21 @@ class VideoDao {
     let videos = await this._loadAllVideos();
     const videoIndex = videos.findIndex(b => b.id === id)
     if (videoIndex >= 0) {
-      videos.splice(videoIndex, 1)
+      videos.splice(videoIndex - 1, 1)
     }
     await wf(this._getStorageLocation(), JSON.stringify(videos, null, 2))
     return {};
   }
+
+  async deleteTag(videoID, tagID) {
+    let videos = await this._loadAllVideos();
+    let videoIndex = videos.findIndex(b => b.id === videoID);
+    let tagIndex = videos[videoIndex].tags.findIndex(b => b === tagID);
+    videos[videoIndex].tags.splice(tagIndex, 1);
+    
+    await wf(this._getStorageLocation(), JSON.stringify(videos, null, 2))
+    return {};
+    }
 
 
   // Returns storage path

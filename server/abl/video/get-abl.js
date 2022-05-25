@@ -11,12 +11,14 @@ async function GetAbl(req, res) {
     let id = req.params.id;
     const video = await videoDao.getVideo(id);
     if (!video) {
-      res.status(400).send({error: `Video with id '${id}' doesn't exist.`});
+      return res.status(400).json({
+        "error": `Video with id '${id}' doesn't exist.`
+      });
     }
-    res.json(video);
+    return res.json(video);
 
   } catch (e) {
-    res.status(500).json({
+    return res.status(500).json({
       "error": e.message
     })
   }

@@ -34,21 +34,23 @@ async function RateAbl(req, res) {
     if (valid) {
       let video = await videoDao.getVideo(req.body.id);
       if (!video) {
-      res.status(400).send({error: `Video with id '${req.body.id}' doesn't exist.`});
+      return res.status(400).json({
+        "error": `Video with id '${req.body.id}' doesn't exist.`
+      });
       } else {
         await videoDao.rateVideo(video.id, req.body.rating);
         video = await videoDao.getVideo(video.id);
-        res.json(video);
+        return res.json(video);
       }
     } else {
-      res.status(400).send({
-        errorMessage: "Validation of input failed.",
-        params: req.body,
-        reason: ajv.errors
+      return res.status(400).json({
+        "errorMessage": "Validation of input failed.",
+        "params": req.body,
+        "reason": ajv.errors
       })
     }
   } catch (e) {
-    res.status(500).json({
+    return res.status(500).json({
       "error": e.message
     })
   }

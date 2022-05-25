@@ -29,15 +29,17 @@ async function ListAbl(req, res) {
         tag = await tagDao.getTagByName(tag);
         searchMap.tag = tag.id;
       } else {
-        res.status(400).send(`Given tag ${tag} doesn't exist!`)
+        return res.status(400).json({
+        "error": `Given tag ${tag} doesn't exist!`
+        })
       }
     }
     let videos = await videoDao.listVideos(searchMap);
     
-    res.json(videos);
+    return res.json(videos);
     
   } catch (e) {
-    res.status(500).json({
+    return res.status(500).json({
       "error": e.message
     })
   }

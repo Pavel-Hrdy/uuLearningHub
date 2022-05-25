@@ -14,10 +14,10 @@ async function ListAbl(req, res) {
     let substring = req.body.search;
     let videos = await tagDao.listTags(substring);
     
-    res.json(videos);
+    return res.json(videos);
     
   } catch (e) {
-    res.status(500).json({
+    return res.status(500).json({
       "error": e.message
     })
   }

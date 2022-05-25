@@ -80,7 +80,7 @@ async function UpdateAbl(req, res) {
           videoSchema.chapterSchema.subchapterOrderNumber = subchapterSchema.subchapterOrderNumber;
         } else {
           okForUpdate = false;
-          res.status(400).send({
+          return res.status(400).json({
           "error": "Chapter doesn't exist!"
           })
         }
@@ -91,7 +91,9 @@ async function UpdateAbl(req, res) {
       for (let tag of videoSchema.tags) {
         if (!await tagDao.getTag(tag)) {
           okForUpdate = false;
-          res.status(400).send("Tags are invalid!");
+          return res.status(400).json({
+            "error": "Tags are invalid!"
+          });
         }
       }
       
@@ -100,7 +102,9 @@ async function UpdateAbl(req, res) {
       for (let link of videoSchema.links) {
         if (!await linkDao.getLink(link)) {
           okForUpdate = false;
-          res.status(400).send("Links are invalid!");
+          return res.status(400).json({
+            "error": "Links are invalid!"
+          });
         }
       }
 
@@ -108,7 +112,9 @@ async function UpdateAbl(req, res) {
       if (videoSchema.state) {
         if (videoSchema.state !== "active" && videoSchema.state !== "passive") {
           okForUpdate = false;
-          res.status(400).send("Status is invalid!");
+          return res.status(400).json({
+            "error": "Status is invalid!"
+          });
         }
       } 
 
@@ -117,20 +123,20 @@ async function UpdateAbl(req, res) {
       if (okForUpdate) {
         video = await videoDao.updateVideo(videoSchema);
       }
-      res.json(video);
+      return res.json(video);
 
     // case: JSON Schema doesn't match
     } else {
-      res.status(400).send({
-        errorMessage: "Validation of input failed.",
-        params: req.body,
-        reason: ajv.errors
+      return res.status(400).json({
+        "errorMessage": "Validation of input failed.",
+        "params": req.body,
+        "reason": ajv.errors
       })
     }
 
   // case Server error
   } catch (e) {
-    res.status(500).send({
+    return res.status(500).json({
       "error": e.message
     })
   }

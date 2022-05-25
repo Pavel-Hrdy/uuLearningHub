@@ -27,16 +27,16 @@ async function CreateAbl(req, res) {
     const valid = ajv.validate(schema, req.body);
     if (valid) {
       let tag = await tagDao.createTag(req.body);
-      res.json(tag);
+      return res.json(tag);
     } else {
-      res.status(400).send({
-        errorMessage: "Validation of input failed.",
-        params: req.body,
-        reason: ajv.errors
+      return res.status(400).json({
+        "errorMessage": "Validation of input failed.",
+        "params": req.body,
+        "reason": ajv.errors
       })
     }
   } catch (e) {
-    res.status(500).json({
+    return res.status(500).json({
       "error": e.message,
     })
   }

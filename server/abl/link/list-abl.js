@@ -10,10 +10,10 @@ const linkDao = new LinkDao(path.join(__dirname, "..", "..", "storage", "links.j
 async function ListAbl(req, res) {
   try {
     let videos = await linkDao.listLinks();
-    res.json(videos);
+    return res.json(videos);
     
   } catch (e) {
-    res.status(500).json({
+    return  res.status(500).json({
       "error": e.message
     })
   }
