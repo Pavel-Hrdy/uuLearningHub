@@ -102,11 +102,7 @@ class VideoDao {
     let videos = await this._loadAllVideos();
     let videoIndex = videos.findIndex(b => b.id === videoID);
     let tagIndex = videos[videoIndex].tags.findIndex(b => b === tagID);
-    
-    console.log(videos[videoIndex].tags);
-    console.log(tagIndex);
     videos[videoIndex].tags.splice(tagIndex, 1);
-    console.log(videos[videoIndex].tags);
     
     await wf(this._getStorageLocation(), JSON.stringify(videos, null, 2))
     return {};

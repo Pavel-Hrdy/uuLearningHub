@@ -69,6 +69,14 @@ class TagDao {
     return tags[tagIndex];
   }
 
+  async deleteTag(tag) {
+    let tags = await this._loadAllTags();
+    const tagIndex = tags.findIndex(b => b.id === tag);
+    tags.splice(tagIndex, 1);
+    await wf(this._getStorageLocation(), JSON.stringify(tags, null, 2))
+    return {};
+  }
+
 
   // Returns storage path
   _getStorageLocation() {
