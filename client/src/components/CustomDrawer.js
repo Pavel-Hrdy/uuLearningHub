@@ -15,6 +15,7 @@ const drawerWidth = 240;
 
 const CustomDrawer = () => {
     const [selectedChapter, setChapter] = useState('');
+    const [selectedSubchapter, setSelectedSubchapter] = useState('');
     const [chapters, setChapters] = useState([]);
     const addChapters = async () => {
         const data = await fetch("http://localhost:5000/chapter");
@@ -60,7 +61,7 @@ const CustomDrawer = () => {
                         {
                             chapter.subchapters.map((subchapter, subchapterIndex) => (
                                 <ListItem key={subchapterIndex + subchapter.subchapterOrderNumber} disablePadding>
-                                    <ListItemButton key={subchapterIndex + subchapter.subchapterOrderNumber + 'button'} component={Link} to={"/chapter/" + chapter.chapterOrderNumber + '/' + subchapter.subchapterOrderNumber}>
+                                    <ListItemButton selected={selectedSubchapter === subchapter.name} onClick={() => setSelectedSubchapter(subchapter.name)} key={subchapterIndex + subchapter.subchapterOrderNumber + 'button'} component={Link} to={"/chapter/" + chapter.chapterOrderNumber + '/' + subchapter.subchapterOrderNumber}>
                                         <ListItemText primary={subchapter.name} />
                                     </ListItemButton>
                                 </ListItem>
