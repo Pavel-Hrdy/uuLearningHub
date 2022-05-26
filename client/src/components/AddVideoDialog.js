@@ -21,6 +21,7 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
         "links": [],
     });
 
+    const [subchapterName, setSubchapterName] = useState("");
     const [tags, setTags] = useState([])
     const [links, setLinks] = useState([])
     const [errorMessage, setErrorMessage] = useState("")
@@ -35,6 +36,12 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
         });
         const finalData = await tagData.json();
         setTags(finalData);
+    }
+
+    const fetchSubchapterName = async () => {
+        const linkData = await fetch(`http://localhost:5000/chapter/${chapterId}-${subchapterId}`);
+        const finalData = await linkData.json();
+        setSubchapterName(finalData.name);
     }
 
     const handleAddingVideo = async () => {
@@ -76,7 +83,9 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
         () => {
             addTags();
             addLinks();
+            fetchSubchapterName();
             setErrorMessage("");
+            // eslint-disable-next-line
         }, [open]
     )
 
@@ -107,7 +116,7 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
     return (
         <div>
             <Dialog open={open} onClose={handleClose} fullWidth>
-                <DialogTitle>Přidání videa</DialogTitle>
+                <DialogTitle>{`Přidání videa do podkapitoly "${subchapterName}"`}</DialogTitle>
                 <DialogContent>
                     <TextField
                         autoFocus

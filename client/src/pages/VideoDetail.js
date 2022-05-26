@@ -11,6 +11,8 @@ import { useParams } from 'react-router';
 import { useState, useEffect } from "react";
 import Box from "@mui/material/Box/Box";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import IconButton from '@mui/material/IconButton';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const VideoDetail = () => {
     const [rating, setRating] = useState(3);
@@ -93,9 +95,16 @@ const VideoDetail = () => {
 
 
     return <Box>
-        <Typography variant="h4" paddingBottom={2}>
-            {videoDetail.name}
-        </Typography>
+        <Box display="flex">
+            <Typography variant="h4" paddingBottom={2}>
+                {videoDetail.name}
+            </Typography>
+            <Box marginLeft="auto">
+                <IconButton aria-label="delete" color="error">
+                    <DeleteIcon />
+                </IconButton>
+            </Box>
+        </Box >
         <Card elevation={5}>
             <Box m={2}>
                 <Grid item key="video-grid-item">
