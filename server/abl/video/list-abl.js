@@ -34,6 +34,11 @@ async function ListAbl(req, res) {
         })
       }
     }
+    let fulltext = req.query.fulltext
+    if (fulltext) {
+      fulltext = fulltext.toLowerCase().replace(/\+/g, " ");
+      searchMap.fulltext = fulltext;
+    }
     let videos = await videoDao.listVideos(searchMap);
     
     return res.json(videos);

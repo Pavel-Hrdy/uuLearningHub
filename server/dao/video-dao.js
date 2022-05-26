@@ -38,18 +38,7 @@ class VideoDao {
     let returnVideos = [];
     if (Object.keys(map).length === 0) {
       return videos;
-    }
-    if (map.tag) {
-      for (let video of videos) {
-        if(video.tags.includes(map.tag)) {
-          returnVideos.push(video);
-        }
-      }
-      if (returnVideos.length === 0) {
-        return [];
-      }
-    }
-    if (map.chapter) {
+    } else if (map.chapter) {
       returnVideos = returnVideos.length === 0 ? videos : returnVideos;
       let index = returnVideos.length;
       while (index--) {
@@ -57,8 +46,19 @@ class VideoDao {
           returnVideos.splice(index, 1);
         }
       }
+    } else if (map.tag) {
+      for (let video of videos) {
+        if(video.tags.includes(map.tag)) {
+          returnVideos.push(video);
+        }
+      }
+    } else if (map.fulltext){
+        for (let video of videos) {
+          if (video.name.toLowerCase().includes(map.fulltext) || video.description.toLowerCase().includes(map.fulltext)) {
+            returnVideos.push(video);
+          }
+        }
     }
-    
     return returnVideos;
   }
 
