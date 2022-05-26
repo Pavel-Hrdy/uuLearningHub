@@ -1120,5 +1120,110 @@
     "links": [],
     "rating": 0,
     "numberOfRatings": 0
+  },
+  {
+    "name": "Variables: let, const and var",
+    "link": "https://www.youtube.com/embed/YKvoSoA9CPw",
+    "description": "Alongside HTML and CSS, JavaScript is one of the best and most demanded technologies of the World Wide Web. JavaScript enables interactive web pages and is a crucial part of web applications. The vast majority of sites use it, and major web browsers have a dedicated JavaScript engine in order to execute it.",
+    "tags": [
+      "aed3079e2aa944be9fe70a4cff9f1dab",
+      "3d4de251ee2dec87b96eeeefb49e0ffb"
+    ],
+    "links": [
+      "const",
+      "let",
+      "var"
+    ],
+    "chapterSchema": {
+      "chapterOrderNumber": "3",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-26T13:52:31.685Z",
+    "id": "YKvoSoA9CPw",
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "JS Basic Mathematical Operators",
+    "link": "https://www.youtube.com/embed/_MC0Gw07w8M",
+    "description": "Basic mathematical operators in JavaScript are: Plus, minus, multiply & divide",
+    "tags": [
+      "8cf9744bf7371e8e370f69c7b115df4f",
+      "5d850b34412683305fb1c5ef7fb63a02",
+      "9761ef18bd91d9dfba33af12c2d4892d"
+    ],
+    "links": [
+      "math"
+    ],
+    "chapterSchema": {
+      "chapterOrderNumber": "5",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-26T13:55:36.434Z",
+    "id": "_MC0Gw07w8M",
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "ECMAScript vs JavaScript",
+    "link": "https://www.youtube.com/embed/ZulAmqxIcQg",
+    "description": "In this quick video, I am speaking about what is the difference between ECMAScript and JavaScript. Sometime people use it interchangeably, and making sure one should use correctly, this video might give little insight toward that direction.",
+    "tags": [
+      "9ad296bb5fc1f1237bcb475c1480411f"
+    ],
+    "links": [
+      "javascript_basics"
+    ],
+    "chapterSchema": {
+      "chapterOrderNumber": "1",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-26T14:13:00.252Z",
+    "id": "ZulAmqxIcQg",
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Basic Web Development Concepts",
+    "link": "https://www.youtube.com/embed/FXqTHsPaY0A",
+    "description": "In this course you'll gain the skills to build simple websites and create interactive prototypes of your business idea. -Basic web development concepts you need to know.",
+    "tags": [
+      "9ad296bb5fc1f1237bcb475c1480411f"
+    ],
+    "links": [
+      "javascript_basics"
+    ],
+    "chapterSchema": {
+      "chapterOrderNumber": "1",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-26T14:16:15.926Z",
+    "id": "FXqTHsPaY0A",
+    "rating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "How to Start Learning JavaScript?",
+    "link": "https://www.youtube.com/embed/AlgSwIRw4do",
+    "description": "If you want to learn JavaScript you may be wondering how do I start and what is the best way to proceed. In this video from All Things JavaScript  I share a few thoughts on the best ways to learn JavaScript and the steps to take if you want to learn using a self-directed approach.",
+    "tags": [
+      "9ad296bb5fc1f1237bcb475c1480411f"
+    ],
+    "links": [
+      "javascript_basics"
+    ],
+    "chapterSchema": {
+      "chapterOrderNumber": "1",
+      "subchapterOrderNumber": "1"
+    },
+    "state": "active",
+    "creationDate": "2022-05-26T14:18:41.003Z",
+    "id": "AlgSwIRw4do",
+    "rating": 0,
+    "numberOfRatings": 0
   }
 ]
