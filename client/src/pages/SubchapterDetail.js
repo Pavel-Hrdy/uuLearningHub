@@ -18,10 +18,10 @@ const SubchapterDetail = () => {
     const { chapterId, subchapterId } = useParams();
     const [videos, setVideos] = useState([]);
     const [openAddVideoDailog, setOpenAddVideoDialog] = useState(false);
+    const [reloadVideos, setReloadVideos] = useState(false);
 
     const handleClickOpenAddVideoDialog = () => {
         setOpenAddVideoDialog(true);
-        console.log('TRUE')
     };
 
     const handleCloseAddVideoDialog = () => {
@@ -33,6 +33,10 @@ const SubchapterDetail = () => {
         navigate(path);
     }
 
+    const reloadVideosCallback = () => {
+        setReloadVideos(!reloadVideos);
+    }
+
     useEffect(
         () => {
             const getDetails = async () => {
@@ -41,7 +45,7 @@ const SubchapterDetail = () => {
                 setVideos(finalData);
             }
             getDetails();
-        }, [chapterId, subchapterId]
+        }, [chapterId, subchapterId, reloadVideos]
     )
 
     const fabStyle = {
@@ -91,7 +95,7 @@ const SubchapterDetail = () => {
         <Fab color="primary" aria-label="add" style={fabStyle} onClick={handleClickOpenAddVideoDialog}>
             <AddIcon />
         </Fab>
-        <AddVideoDialog open={openAddVideoDailog} handleClose={() => handleCloseAddVideoDialog()} />
+        <AddVideoDialog reloadVideosCallback={reloadVideosCallback} chapterId={chapterId} subchapterId={subchapterId} open={openAddVideoDailog} handleClose={() => handleCloseAddVideoDialog()} />
     </Box>;
 }
 

@@ -4,7 +4,6 @@ import CardContent from "@mui/material/CardContent/CardContent";
 import Chip from "@mui/material/Chip/Chip";
 import Grid from "@mui/material/Grid/Grid";
 import Rating from "@mui/material/Rating/Rating";
-import Link from "@mui/material/Link"
 import Typography from "@mui/material/Typography/Typography";
 import React from "react";
 import ReactPlayer from "react-player";
@@ -116,9 +115,7 @@ const VideoDetail = () => {
                     {
                         links.map((link, index) => {
                             return <Grid item key={link["name"] + index}>
-                                <Link to={{ pathname: "https://example.zendesk.com/hc/en-us/articles/123456789-Privacy-Policies" }} target="_blank" >
-                                    <Chip label={`${link["name"]}`} icon={<OpenInNewIcon />} onClick={() => handleLinkClick(link["link"])} color="success" />
-                                </Link>
+                                <Chip label={`${link["name"]}`} icon={<OpenInNewIcon />} onClick={() => handleLinkClick(link["link"])} color="success" />
                             </Grid>
                         })
                     }

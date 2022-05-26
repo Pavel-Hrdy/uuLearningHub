@@ -43,7 +43,7 @@ const CustomDrawer = () => {
         <Box sx={{ overflow: 'auto' }}>
             <List>
                 <ListItem key='welcome-item' disablePadding>
-                    <ListItemButton component={Link} to="/">
+                    <ListItemButton component={Link} to="/" selected={selectedSubchapter === '--welcome--'} onClick={() => setSelectedSubchapter("--welcome--")}>
                         <ListItemText primary='Vítejte' />
                     </ListItemButton>
                 </ListItem>
