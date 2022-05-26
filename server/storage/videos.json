@@ -12,7 +12,8 @@
     "id": "4MsfBokJiSs",
     "tags": [
       "9ad296bb5fc1f1237bcb475c1480411f",
-      "1e62981ff0ba934f9ae91a565100e7cb"
+      "1e62981ff0ba934f9ae91a565100e7cb",
+      "28c3ef36186ec9b8e7f3b1789c7d5f5c"
     ],
     "links": [
       "javascript_basics"
@@ -205,7 +206,7 @@
     "creationDate": "2022-05-23T11:46:03.975Z",
     "id": "1-Qp3xA36XM",
     "tags": [],
-    "links": [],
+    "links": ["var"],
     "rating": 0,
     "numberOfRatings": 0
   },
