@@ -10,7 +10,6 @@ const DeleteVideoDialog = ({ open, handleClose, videoId }) => {
     const navigate = useNavigate();
 
     const deleteVideo = async () => {
-        console.log(videoId);
         const deleteVideo = await fetch('http://localhost:5000/video/delete', {
             method: 'POST',
             headers: {
