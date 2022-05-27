@@ -10,7 +10,7 @@ const DeleteVideoDialog = ({ open, handleClose, videoId }) => {
     const navigate = useNavigate();
 
     const deleteVideo = async () => {
-        const deleteVideo = await fetch('http://localhost:5000/video/delete', {
+        await fetch('http://localhost:5000/video/delete', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -20,7 +20,6 @@ const DeleteVideoDialog = ({ open, handleClose, videoId }) => {
                 id: videoId
             })
         });
-        const finalData = await deleteVideo.json();
     }
 
     const handleDeleteVideo = async () => {

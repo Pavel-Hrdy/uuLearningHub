@@ -8,13 +8,15 @@ import Typography from "@mui/material/Typography/Typography";
 import React from "react";
 import ReactPlayer from "react-player";
 import { useParams } from 'react-router';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Box from "@mui/material/Box/Box";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import DeleteVideoDialog from "components/DeleteVideoDialog";
-
+import EditIcon from '@mui/icons-material/Edit';
+import AddVideoDialog from "components/AddVideoDialog";
+import { GlobalContext } from "context/GlobalContext";
 const VideoDetail = () => {
 
     const [rating, setRating] = useState(3);
@@ -23,6 +25,9 @@ const VideoDetail = () => {
     const [videoDetail, setVideoDetail] = useState({ "tags": [] });
     const { videoId } = useParams();
     const [isDeleteDialogActive, showDeleteDialog] = useState(false);
+    const [isEditVideoDialogActive, showEditVideoDialog] = useState(false);
+    const [refresh, setRefresh] = useState(false);
+    const context = useContext(GlobalContext);
 
     const postRating = async (rating) => {
         await fetch('http://localhost:5000/video/rate', {
@@ -38,6 +43,10 @@ const VideoDetail = () => {
         });
         getVideoDetail();
     };
+
+    const refreshCallback = () => {
+        setRefresh(!refresh);
+    }
 
     const getTagsAndLinks = async (videoData) => {
         const tags = videoData.tags;
@@ -89,7 +98,7 @@ const VideoDetail = () => {
         () => {
             getVideoDetail();
             // eslint-disable-next-line
-        }, [videoId]
+        }, [videoId, refresh]
     )
 
     const handleLinkClick = (url) => {
@@ -102,11 +111,14 @@ const VideoDetail = () => {
             <Typography variant="h4" paddingBottom={2}>
                 {videoDetail.name}
             </Typography>
-            <Box marginLeft="auto">
+            {context.adminMode ? <Box marginLeft="auto">
+                <IconButton aria-label="edit" color="primary" onClick={() => showEditVideoDialog(true)}>
+                    <EditIcon />
+                </IconButton>
                 <IconButton aria-label="delete" color="error" onClick={() => showDeleteDialog(true)}>
                     <DeleteIcon />
                 </IconButton>
-            </Box>
+            </Box> : <Box />}
         </Box >
         <Card elevation={5}>
             <Box m={2}>
@@ -159,7 +171,11 @@ const VideoDetail = () => {
         <DeleteVideoDialog videoId={videoId} open={isDeleteDialogActive} handleClose={() => {
             showDeleteDialog(false);
         }} />
+        <AddVideoDialog reloadVideosCallback={refreshCallback} open={isEditVideoDialogActive} handleClose={() => showEditVideoDialog(false)} editedVideoDetail={{
+            ...videoDetail,
+            tags: tags,
+            links: links
+        }} />
     </Box >
 }
-
 export default VideoDetail
