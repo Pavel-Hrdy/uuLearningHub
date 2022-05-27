@@ -29,7 +29,7 @@ const SubchapterDetail = () => {
     };
     let navigate = useNavigate();
     const routeChange = (videoId) => {
-        let path = `/video/${videoId}`;
+        let path = `video/${videoId}`;
         navigate(path);
     }
 

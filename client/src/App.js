@@ -23,7 +23,7 @@ const App = () =>
           <Route path="/" element={<Home />} />
           <Route path="/chapter/:chapterId" element={<ChapterDetail />} />
           <Route path="/chapter/:chapterId/:subchapterId" element={<SubchapterDetail />} />
-          <Route path="/video/:videoId" element={<VideoDetail />} />
+          <Route path="/chapter/:chapterId/:subchapterId/video/:videoId" element={<VideoDetail />} />
         </Routes>
       </Box>
     </BrowserRouter >

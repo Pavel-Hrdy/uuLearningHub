@@ -10,14 +10,14 @@ const DEFAULT_STORAGE_PATH = path.join(__dirname, "..", "storage", "videos.json"
 
 
 class VideoDao {
-  constructor(storagePath=DEFAULT_STORAGE_PATH) {
+  constructor(storagePath = DEFAULT_STORAGE_PATH) {
     this._videoStoragePath = storagePath;
   }
 
 
   async createVideo(video) {
     let videos = await this._loadAllVideos();
-    if (videos.find(b =>  b.id === video.id)) {
+    if (videos.find(b => b.id === video.id)) {
       throw new Error(`Video with ID '${video.id}' already exists!`);
     }
     videos.push(video)
@@ -28,7 +28,7 @@ class VideoDao {
 
   async getVideo(id) {
     let videos = await this._loadAllVideos();
-    const video = videos.find(b => {return b.id === id;});
+    const video = videos.find(b => { return b.id === id; });
     return video;
   }
 
@@ -42,22 +42,22 @@ class VideoDao {
       returnVideos = returnVideos.length === 0 ? videos : returnVideos;
       let index = returnVideos.length;
       while (index--) {
-        if(!(map.chapter === returnVideos[index].chapterSchema.chapterOrderNumber && map.subchapter === returnVideos[index].chapterSchema.subchapterOrderNumber)) {
+        if (!(map.chapter === returnVideos[index].chapterSchema.chapterOrderNumber && map.subchapter === returnVideos[index].chapterSchema.subchapterOrderNumber)) {
           returnVideos.splice(index, 1);
         }
       }
     } else if (map.tag) {
       for (let video of videos) {
-        if(video.tags.includes(map.tag)) {
+        if (video.tags.includes(map.tag)) {
           returnVideos.push(video);
         }
       }
-    } else if (map.fulltext){
-        for (let video of videos) {
-          if (video.name.toLowerCase().includes(map.fulltext) || video.description.toLowerCase().includes(map.fulltext)) {
-            returnVideos.push(video);
-          }
+    } else if (map.fulltext) {
+      for (let video of videos) {
+        if (video.name.toLowerCase().includes(map.fulltext) || video.description.toLowerCase().includes(map.fulltext)) {
+          returnVideos.push(video);
         }
+      }
     }
     return returnVideos;
   }
@@ -77,7 +77,7 @@ class VideoDao {
     await wf(this._getStorageLocation(), JSON.stringify(videos, null, 2))
     return videos[videoIndex];
   }
-  
+
   async rateVideo(id, rating) {
     let videos = await this._loadAllVideos();
     const videoIndex = videos.findIndex(b => b.id === id);
@@ -90,10 +90,9 @@ class VideoDao {
 
   async deleteVideo(id) {
     let videos = await this._loadAllVideos();
-    const videoIndex = videos.findIndex(b => b.id === id)
-    if (videoIndex >= 0) {
-      videos.splice(videoIndex - 1, 1)
-    }
+
+    videos = videos.filter((v) => v.id !== id)
+
     await wf(this._getStorageLocation(), JSON.stringify(videos, null, 2))
     return {};
   }
@@ -103,10 +102,10 @@ class VideoDao {
     let videoIndex = videos.findIndex(b => b.id === videoID);
     let tagIndex = videos[videoIndex].tags.findIndex(b => b === tagID);
     videos[videoIndex].tags.splice(tagIndex, 1);
-    
+
     await wf(this._getStorageLocation(), JSON.stringify(videos, null, 2))
     return {};
-    }
+  }
 
 
   // Returns storage path
@@ -114,7 +113,7 @@ class VideoDao {
     return this._videoStoragePath;
   }
 
-  
+
   // Loading all videos from the DB and returns them as an array of objects
   async _loadAllVideos() {
     let videos;
@@ -132,7 +131,7 @@ class VideoDao {
     return videos;
   }
 
-  
+
   _isDuplicate(videos, id) {
     const result = videos.find(b => {
       return b.id === id;

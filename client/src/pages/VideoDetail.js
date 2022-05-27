@@ -13,13 +13,16 @@ import Box from "@mui/material/Box/Box";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
+import DeleteVideoDialog from "components/DeleteVideoDialog";
 
 const VideoDetail = () => {
+
     const [rating, setRating] = useState(3);
     const [tags, setTags] = useState([]);
     const [links, setLinks] = useState([]);
     const [videoDetail, setVideoDetail] = useState({ "tags": [] });
     const { videoId } = useParams();
+    const [isDeleteDialogActive, showDeleteDialog] = useState(false);
 
     const postRating = async (rating) => {
         await fetch('http://localhost:5000/video/rate', {
@@ -100,7 +103,7 @@ const VideoDetail = () => {
                 {videoDetail.name}
             </Typography>
             <Box marginLeft="auto">
-                <IconButton aria-label="delete" color="error">
+                <IconButton aria-label="delete" color="error" onClick={() => showDeleteDialog(true)}>
                     <DeleteIcon />
                 </IconButton>
             </Box>
@@ -153,8 +156,9 @@ const VideoDetail = () => {
                 </Grid>
             </CardContent>
         </Card>
-
-
+        <DeleteVideoDialog videoId={videoId} open={isDeleteDialogActive} handleClose={() => {
+            showDeleteDialog(false);
+        }} />
     </Box >
 }
 
