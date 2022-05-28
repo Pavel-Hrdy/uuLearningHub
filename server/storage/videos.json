@@ -13,10 +13,15 @@
     "tags": [
       "9ad296bb5fc1f1237bcb475c1480411f",
       "1e62981ff0ba934f9ae91a565100e7cb",
-      "28c3ef36186ec9b8e7f3b1789c7d5f5c"
+      "28c3ef36186ec9b8e7f3b1789c7d5f5c",
+      "ccd4bf7e3c41bf1eedb524ad2af7d48b",
+      "60ed21de9130dcc0bd7dd9f63df7f91f"
     ],
     "links": [
-      "javascript_basics"
+      "javascript_basics",
+      "how_the_web_works",
+      "first_steps",
+      "lexical_grammar"
     ],
     "rating": 0,
     "numberOfRatings": 0
@@ -34,11 +39,15 @@
     "id": "A3GjzmUoeSs",
     "tags": [
       "9ad296bb5fc1f1237bcb475c1480411f",
-      "7559ee3f83e1a653bc2d49c648485ad6"
+      "7559ee3f83e1a653bc2d49c648485ad6",
+      "ccd4bf7e3c41bf1eedb524ad2af7d48b",
+      "1e62981ff0ba934f9ae91a565100e7cb"
     ],
     "links": [
       "javascript_basics",
-      "first_steps"
+      "first_steps",
+      "how_the_web_works",
+      "lexical_grammar"
     ],
     "rating": 0,
     "numberOfRatings": 0
@@ -57,11 +66,15 @@
     "tags": [
       "9ad296bb5fc1f1237bcb475c1480411f",
       "8ec8a6369829539d13c05f5c0764465f",
-      "aed3079e2aa944be9fe70a4cff9f1dab"
+      "aed3079e2aa944be9fe70a4cff9f1dab",
+      "ccd4bf7e3c41bf1eedb524ad2af7d48b",
+      "1e62981ff0ba934f9ae91a565100e7cb"
     ],
     "links": [
       "how_the_web_works",
-      "javascript_basics"
+      "javascript_basics",
+      "first_steps",
+      "lexical_grammar"
     ],
     "rating": 0,
     "numberOfRatings": 0
@@ -77,8 +90,16 @@
     "state": "active",
     "creationDate": "2022-05-23T11:44:17.857Z",
     "id": "UaYkmkBZIAM",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "99f097987dea8cc1110366a08a661170",
+      "9b9d8e6d4df6edee9d646f230f16ca32",
+      "706484ded3486801f7d0a78d2822d92b",
+      "d4cb03f524b9962ab8904ca9f09c6199",
+      "fb14bcaf1b117cbb986892c035cbe2ac"
+    ],
+    "links": [
+      "number"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -93,8 +114,16 @@
     "state": "active",
     "creationDate": "2022-05-23T11:44:28.782Z",
     "id": "cnb1c8ciN9s",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "99f097987dea8cc1110366a08a661170",
+      "9b9d8e6d4df6edee9d646f230f16ca32",
+      "706484ded3486801f7d0a78d2822d92b",
+      "d4cb03f524b9962ab8904ca9f09c6199",
+      "fb14bcaf1b117cbb986892c035cbe2ac"
+    ],
+    "links": [
+      "number"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -109,8 +138,16 @@
     "state": "active",
     "creationDate": "2022-05-23T11:44:39.008Z",
     "id": "Xzi4-26vdOM",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "99f097987dea8cc1110366a08a661170",
+      "9b9d8e6d4df6edee9d646f230f16ca32",
+      "706484ded3486801f7d0a78d2822d92b",
+      "d4cb03f524b9962ab8904ca9f09c6199",
+      "fb14bcaf1b117cbb986892c035cbe2ac"
+    ],
+    "links": [
+      "number"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -125,8 +162,14 @@
     "state": "active",
     "creationDate": "2022-05-23T11:45:00.683Z",
     "id": "u4P0LOofEFs",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "14b20217cdd8d9db147578062ea4b7a2",
+      "79ade46f424b98e77060a96bbb36689e",
+      "b6d37cfe8266d3ed021d1e03cca04130"
+    ],
+    "links": [
+      "number"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -141,8 +184,14 @@
     "state": "active",
     "creationDate": "2022-05-23T11:45:15.403Z",
     "id": "lo2McnYcTTQ",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "14b20217cdd8d9db147578062ea4b7a2",
+      "79ade46f424b98e77060a96bbb36689e",
+      "b6d37cfe8266d3ed021d1e03cca04130"
+    ],
+    "links": [
+      "number"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -157,8 +206,14 @@
     "state": "active",
     "creationDate": "2022-05-23T11:45:25.846Z",
     "id": "uTJoJtNYcaQ",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "61f80d20d7e67b36b62bf9e6d3931f66",
+      "1a91aef02fc53e1481a1aaf26fc3820e",
+      "be49fd4c87cfc92a56af67ca96ca42e3"
+    ],
+    "links": [
+      "number"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -173,8 +228,14 @@
     "state": "active",
     "creationDate": "2022-05-23T11:45:36.741Z",
     "id": "5aJKKgSEUnY",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "61f80d20d7e67b36b62bf9e6d3931f66",
+      "1a91aef02fc53e1481a1aaf26fc3820e",
+      "be49fd4c87cfc92a56af67ca96ca42e3"
+    ],
+    "links": [
+      "number"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -189,8 +250,18 @@
     "state": "active",
     "creationDate": "2022-05-23T11:45:50.484Z",
     "id": "J0y6XXdm4KI",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "aed3079e2aa944be9fe70a4cff9f1dab",
+      "3d4de251ee2dec87b96eeeefb49e0ffb",
+      "241f70ae8ad6f2491e6e5ab25503ab17",
+      "28c3ef36186ec9b8e7f3b1789c7d5f5c",
+      "da0f8629ad0160163ce84f077b728d1f"
+    ],
+    "links": [
+      "var",
+      "let",
+      "const"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -205,8 +276,19 @@
     "state": "active",
     "creationDate": "2022-05-23T11:46:03.975Z",
     "id": "1-Qp3xA36XM",
-    "tags": [],
-    "links": ["var"],
+    "tags": [
+      "7559ee3f83e1a653bc2d49c648485ad6",
+      "aed3079e2aa944be9fe70a4cff9f1dab",
+      "3d4de251ee2dec87b96eeeefb49e0ffb",
+      "241f70ae8ad6f2491e6e5ab25503ab17",
+      "28c3ef36186ec9b8e7f3b1789c7d5f5c",
+      "da0f8629ad0160163ce84f077b728d1f"
+    ],
+    "links": [
+      "var",
+      "let",
+      "const"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -221,8 +303,19 @@
     "state": "active",
     "creationDate": "2022-05-23T11:46:14.561Z",
     "id": "wRns-gHaQhw",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "7559ee3f83e1a653bc2d49c648485ad6",
+      "aed3079e2aa944be9fe70a4cff9f1dab",
+      "3d4de251ee2dec87b96eeeefb49e0ffb",
+      "241f70ae8ad6f2491e6e5ab25503ab17",
+      "28c3ef36186ec9b8e7f3b1789c7d5f5c",
+      "da0f8629ad0160163ce84f077b728d1f"
+    ],
+    "links": [
+      "var",
+      "let",
+      "const"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -237,8 +330,18 @@
     "state": "active",
     "creationDate": "2022-05-23T11:46:25.371Z",
     "id": "TOkU5HxES1o",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "aed3079e2aa944be9fe70a4cff9f1dab",
+      "3d4de251ee2dec87b96eeeefb49e0ffb",
+      "241f70ae8ad6f2491e6e5ab25503ab17",
+      "28c3ef36186ec9b8e7f3b1789c7d5f5c",
+      "da0f8629ad0160163ce84f077b728d1f"
+    ],
+    "links": [
+      "var",
+      "let",
+      "const"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -301,7 +404,9 @@
     "state": "active",
     "creationDate": "2022-05-25T12:41:18.464Z",
     "id": "-eRsWqwcPuk",
-    "tags": [],
+    "tags": [
+      "b6d37cfe8266d3ed021d1e03cca04130"
+    ],
     "links": [],
     "rating": 0,
     "numberOfRatings": 0
@@ -317,8 +422,14 @@
     "state": "active",
     "creationDate": "2022-05-25T12:41:26.150Z",
     "id": "HGSV8KR1W-Q",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "b6d37cfe8266d3ed021d1e03cca04130",
+      "9b9d8e6d4df6edee9d646f230f16ca32",
+      "706484ded3486801f7d0a78d2822d92b"
+    ],
+    "links": [
+      "number"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -333,8 +444,14 @@
     "state": "active",
     "creationDate": "2022-05-25T12:41:33.130Z",
     "id": "zq9CF9G3Isw",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "b6d37cfe8266d3ed021d1e03cca04130",
+      "9b9d8e6d4df6edee9d646f230f16ca32",
+      "706484ded3486801f7d0a78d2822d92b"
+    ],
+    "links": [
+      "number"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -381,8 +498,12 @@
     "state": "active",
     "creationDate": "2022-05-25T12:41:55.919Z",
     "id": "DcoAjEZYies",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "2e52a2b454980f8d4be960cd396003e5"
+    ],
+    "links": [
+      "string"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -397,8 +518,12 @@
     "state": "active",
     "creationDate": "2022-05-25T12:42:04.373Z",
     "id": "q6g5fbLVF-I",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "2e52a2b454980f8d4be960cd396003e5"
+    ],
+    "links": [
+      "string"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -813,8 +938,13 @@
     "state": "active",
     "creationDate": "2022-05-25T12:45:20.543Z",
     "id": "-L41L0IZuv4",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "b6d37cfe8266d3ed021d1e03cca04130",
+      "8cf9744bf7371e8e370f69c7b115df4f"
+    ],
+    "links": [
+      "number"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -829,8 +959,13 @@
     "state": "active",
     "creationDate": "2022-05-25T12:45:26.389Z",
     "id": "uuRJ1aCj8Ro",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "b6d37cfe8266d3ed021d1e03cca04130",
+      "8cf9744bf7371e8e370f69c7b115df4f"
+    ],
+    "links": [
+      "number"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -845,8 +980,13 @@
     "state": "active",
     "creationDate": "2022-05-25T12:45:34.247Z",
     "id": "mbT7sSmVUS8",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "b6d37cfe8266d3ed021d1e03cca04130",
+      "8cf9744bf7371e8e370f69c7b115df4f"
+    ],
+    "links": [
+      "number"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -861,7 +1001,10 @@
     "state": "active",
     "creationDate": "2022-05-25T12:45:41.253Z",
     "id": "2v2oi-kX59o",
-    "tags": [],
+    "tags": [
+      "b6d37cfe8266d3ed021d1e03cca04130",
+      "8cf9744bf7371e8e370f69c7b115df4f"
+    ],
     "links": [],
     "rating": 0,
     "numberOfRatings": 0
@@ -877,7 +1020,11 @@
     "state": "active",
     "creationDate": "2022-05-25T12:45:47.392Z",
     "id": "w_hkQgPTMDw",
-    "tags": [],
+    "tags": [
+      "7559ee3f83e1a653bc2d49c648485ad6",
+      "b6d37cfe8266d3ed021d1e03cca04130",
+      "8cf9744bf7371e8e370f69c7b115df4f"
+    ],
     "links": [],
     "rating": 0,
     "numberOfRatings": 0
@@ -893,8 +1040,12 @@
     "state": "active",
     "creationDate": "2022-05-25T12:45:53.557Z",
     "id": "Z9GdzsJgFW4",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "b6d37cfe8266d3ed021d1e03cca04130"
+    ],
+    "links": [
+      "8cf9744bf7371e8e370f69c7b115df4f"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -989,8 +1140,13 @@
     "state": "active",
     "creationDate": "2022-05-25T12:46:34.810Z",
     "id": "ALUdVqVsgiM",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "99f097987dea8cc1110366a08a661170",
+      "b6d37cfe8266d3ed021d1e03cca04130"
+    ],
+    "links": [
+      "b6d37cfe8266d3ed021d1e03cca04130"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -1005,8 +1161,13 @@
     "state": "active",
     "creationDate": "2022-05-25T12:46:39.828Z",
     "id": "OLS7opbtKwE",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "99f097987dea8cc1110366a08a661170",
+      "b6d37cfe8266d3ed021d1e03cca04130"
+    ],
+    "links": [
+      "b6d37cfe8266d3ed021d1e03cca04130"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -1021,7 +1182,9 @@
     "state": "active",
     "creationDate": "2022-05-25T12:46:46.361Z",
     "id": "1PukU1DrIts",
-    "tags": [],
+    "tags": [
+      "2e52a2b454980f8d4be960cd396003e5"
+    ],
     "links": [],
     "rating": 0,
     "numberOfRatings": 0
@@ -1037,7 +1200,9 @@
     "state": "active",
     "creationDate": "2022-05-25T12:46:53.865Z",
     "id": "09BwruU4kiY",
-    "tags": [],
+    "tags": [
+      "2e52a2b454980f8d4be960cd396003e5"
+    ],
     "links": [],
     "rating": 0,
     "numberOfRatings": 0
@@ -1053,8 +1218,12 @@
     "state": "active",
     "creationDate": "2022-05-25T12:47:00.800Z",
     "id": "nCwQY8inRvU",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "99f097987dea8cc1110366a08a661170"
+    ],
+    "links": [
+      "string"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -1069,8 +1238,12 @@
     "state": "active",
     "creationDate": "2022-05-25T12:47:06.878Z",
     "id": "808eYu9B9Yw",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "99f097987dea8cc1110366a08a661170"
+    ],
+    "links": [
+      "string"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -1085,8 +1258,17 @@
     "state": "active",
     "creationDate": "2022-05-25T12:47:12.955Z",
     "id": "8w0sxLVZLE4",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "3d4de251ee2dec87b96eeeefb49e0ffb",
+      "b7477862f5a211fda2e88273a0b193cf",
+      "2b0d5539f5050ba7193f80b2b70e91d8",
+      "2beb122757f43fd96da3ff3920b58b38",
+      "8052de712a1efddc5f80fe69c4dde499"
+    ],
+    "links": [
+      "comment",
+      "expressions_and_operators"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -1101,8 +1283,17 @@
     "state": "active",
     "creationDate": "2022-05-25T12:47:21.687Z",
     "id": "9aGIAL16DL4",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "3d4de251ee2dec87b96eeeefb49e0ffb",
+      "b7477862f5a211fda2e88273a0b193cf",
+      "2b0d5539f5050ba7193f80b2b70e91d8",
+      "2beb122757f43fd96da3ff3920b58b38",
+      "8052de712a1efddc5f80fe69c4dde499"
+    ],
+    "links": [
+      "comment",
+      "expressions_and_operators"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -1117,8 +1308,17 @@
     "state": "active",
     "creationDate": "2022-05-25T12:47:27.623Z",
     "id": "ILx2rvQDLDk",
-    "tags": [],
-    "links": [],
+    "tags": [
+      "3d4de251ee2dec87b96eeeefb49e0ffb",
+      "b7477862f5a211fda2e88273a0b193cf",
+      "2b0d5539f5050ba7193f80b2b70e91d8",
+      "2beb122757f43fd96da3ff3920b58b38",
+      "8052de712a1efddc5f80fe69c4dde499"
+    ],
+    "links": [
+      "comment",
+      "expressions_and_operators"
+    ],
     "rating": 0,
     "numberOfRatings": 0
   },
@@ -1152,10 +1352,19 @@
     "tags": [
       "8cf9744bf7371e8e370f69c7b115df4f",
       "5d850b34412683305fb1c5ef7fb63a02",
-      "9761ef18bd91d9dfba33af12c2d4892d"
+      "9761ef18bd91d9dfba33af12c2d4892d",
+      "aed3079e2aa944be9fe70a4cff9f1dab",
+      "3d4de251ee2dec87b96eeeefb49e0ffb",
+      "241f70ae8ad6f2491e6e5ab25503ab17",
+      "28c3ef36186ec9b8e7f3b1789c7d5f5c",
+      "da0f8629ad0160163ce84f077b728d1f"
     ],
     "links": [
-      "math"
+      "math",
+      "var",
+      "let",
+      "const"
+
     ],
     "chapterSchema": {
       "chapterOrderNumber": "5",
@@ -1172,10 +1381,16 @@
     "link": "https://www.youtube.com/embed/ZulAmqxIcQg",
     "description": "In this quick video, I am speaking about what is the difference between ECMAScript and JavaScript. Sometime people use it interchangeably, and making sure one should use correctly, this video might give little insight toward that direction.",
     "tags": [
-      "9ad296bb5fc1f1237bcb475c1480411f"
+      "9ad296bb5fc1f1237bcb475c1480411f",
+      "1e62981ff0ba934f9ae91a565100e7cb",
+      "28c3ef36186ec9b8e7f3b1789c7d5f5c",
+      "ccd4bf7e3c41bf1eedb524ad2af7d48b"
     ],
     "links": [
-      "javascript_basics"
+      "javascript_basics",
+      "how_the_web_works",
+      "first_steps",
+      "lexical_grammar"
     ],
     "chapterSchema": {
       "chapterOrderNumber": "1",
@@ -1192,10 +1407,16 @@
     "link": "https://www.youtube.com/embed/FXqTHsPaY0A",
     "description": "In this course you'll gain the skills to build simple websites and create interactive prototypes of your business idea. -Basic web development concepts you need to know.",
     "tags": [
-      "9ad296bb5fc1f1237bcb475c1480411f"
+      "9ad296bb5fc1f1237bcb475c1480411f",
+      "1e62981ff0ba934f9ae91a565100e7cb",
+      "28c3ef36186ec9b8e7f3b1789c7d5f5c",
+      "ccd4bf7e3c41bf1eedb524ad2af7d48b"
     ],
     "links": [
-      "javascript_basics"
+      "javascript_basics",
+      "how_the_web_works",
+      "first_steps",
+      "lexical_grammar"
     ],
     "chapterSchema": {
       "chapterOrderNumber": "1",
@@ -1212,10 +1433,16 @@
     "link": "https://www.youtube.com/embed/AlgSwIRw4do",
     "description": "If you want to learn JavaScript you may be wondering how do I start and what is the best way to proceed. In this video from All Things JavaScript  I share a few thoughts on the best ways to learn JavaScript and the steps to take if you want to learn using a self-directed approach.",
     "tags": [
-      "9ad296bb5fc1f1237bcb475c1480411f"
+      "9ad296bb5fc1f1237bcb475c1480411f",
+      "1e62981ff0ba934f9ae91a565100e7cb",
+      "28c3ef36186ec9b8e7f3b1789c7d5f5c",
+      "ccd4bf7e3c41bf1eedb524ad2af7d48b"
     ],
     "links": [
-      "javascript_basics"
+      "javascript_basics",
+      "how_the_web_works",
+      "first_steps",
+      "lexical_grammar"
     ],
     "chapterSchema": {
       "chapterOrderNumber": "1",

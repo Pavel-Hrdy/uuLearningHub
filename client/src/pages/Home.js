@@ -14,7 +14,8 @@ const switchStyle = {
 const Home = () => {
     const context = useContext(GlobalContext);
     return <Box>
-        <LogoSvg height={270} />
+
+        <img src="logo.svg" alt="Monkey face" style={{ width: "60%", height: "auto" }}></img>
         <Typography paragraph paddingLeft={2}>
             Zde najdete všechny potřebné materiály k naučení JavaScriptu.
         </Typography>
