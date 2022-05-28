@@ -66,8 +66,7 @@ async function UpdateAbl(req, res) {
     const ajv = new Ajv();
     const valid = ajv.validate(schema, req.body);
     if (valid) {
-      // pomocná proměnná kontrolující, zda jsou všechny updatované paramtery v pořádku
-      let okForUpdate = true;
+
       // nahrání schématu videa z request.body
       let videoSchema = req.body;
 
@@ -79,7 +78,6 @@ async function UpdateAbl(req, res) {
           videoSchema.chapterSchema.chapterOrderNumber = chapterSchema.chapterOrderNumber;
           videoSchema.chapterSchema.subchapterOrderNumber = subchapterSchema.subchapterOrderNumber;
         } else {
-          okForUpdate = false;
           return res.status(400).json({
           "error": "Chapter doesn't exist!"
           })
@@ -90,7 +88,6 @@ async function UpdateAbl(req, res) {
       videoSchema.tags = videoSchema.tags ? videoSchema.tags : [];
       for (let tag of videoSchema.tags) {
         if (!await tagDao.getTag(tag)) {
-          okForUpdate = false;
           return res.status(400).json({
             "error": "Tags are invalid!"
           });
@@ -101,7 +98,6 @@ async function UpdateAbl(req, res) {
       videoSchema.links = videoSchema.links ? videoSchema.links : [];
       for (let link of videoSchema.links) {
         if (!await linkDao.getLink(link)) {
-          okForUpdate = false;
           return res.status(400).json({
             "error": "Links are invalid!"
           });
@@ -111,7 +107,6 @@ async function UpdateAbl(req, res) {
       // status is checked
       if (videoSchema.state) {
         if (videoSchema.state !== "active" && videoSchema.state !== "passive") {
-          okForUpdate = false;
           return res.status(400).json({
             "error": "Status is invalid!"
           });
@@ -120,9 +115,8 @@ async function UpdateAbl(req, res) {
 
       // adding video to the DB if everything was fine (There is no way to validate name and description)
       let video;
-      if (okForUpdate) {
-        video = await videoDao.updateVideo(videoSchema);
-      }
+      video = await videoDao.updateVideo(videoSchema);
+      
       return res.json(video);
 
     // case: JSON Schema doesn't match

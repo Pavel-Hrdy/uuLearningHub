@@ -53,7 +53,9 @@ const schema = {
       "uniqueItems": true
     },
     "state": {
-      "type": "string"}
+      "type": "string",
+      "enum": ["active", "passive", null]
+    }
   },
   "required": [
     "name",
@@ -69,8 +71,6 @@ async function CreateAbl(req, res) {
     const ajv = new Ajv();
     const valid = ajv.validate(schema, req.body);
     if (valid) {
-      // pomocná proměnná kontrolující, zda jsou všechny vytvářené paramtery v pořádku
-      let okForUpdate = true;
       // nahrání schématu videa z request.body
       let videoSchema = req.body;
       // adding creationDate attribute to the video object
@@ -82,7 +82,6 @@ async function CreateAbl(req, res) {
 
       // validates the link
       if (!matchArr) {
-        okForUpdate = false;
         return res.status(400).json({
           "error": "The link is not valid!"
         })
@@ -99,7 +98,6 @@ async function CreateAbl(req, res) {
         videoSchema.chapterSchema.chapterOrderNumber = chapterSchema.chapterOrderNumber;
         videoSchema.chapterSchema.subchapterOrderNumber = subchapterSchema.subchapterOrderNumber;
       } else {
-        okForUpdate = false;
         return res.status(400).json({
           "error": "Chapter doesn't exist!"
         })
@@ -109,7 +107,6 @@ async function CreateAbl(req, res) {
       videoSchema.tags = videoSchema.tags ? videoSchema.tags : [];
       for (let tag of videoSchema.tags) {
         if (! await tagDao.getTag(tag)) {
-          okForUpdate = false;
           return res.status(400).json({
             "error": "Tags are invalid!"
           });
@@ -120,31 +117,24 @@ async function CreateAbl(req, res) {
       videoSchema.links = videoSchema.links ? videoSchema.links : [];
       for (let link of videoSchema.links) {
         if (!await linkDao.getLink(link)) {
-          okForUpdate = false;
           return res.status(400).json({
             "error": "Links are invalid!"
           });
         }
       }
 
-      // status is checked
-      if (videoSchema.state) {
-        if (videoSchema.state !== "active" && videoSchema.state !== "passive") {
-          okForUpdate = false;
-          return res.status(400).json({
-            "error": "Status is invalid!"
-          });
-        }
-      } 
+      // status is set to default value - "active"
+      if (!videoSchema.state) {
+        videoSchema.state = "active";
+      }
 
       // setting video rating to zero and number of ratings to zero
       videoSchema.rating = 0;
       videoSchema.numberOfRatings = 0;
+
       // adding video to the DB if everything is fine
-      if (okForUpdate) {
-        let video = await videoDao.createVideo(videoSchema);
-        return res.json(video);
-      }
+      let video = await videoDao.createVideo(videoSchema);
+      return res.json(video);
 
     // JSON Schema validation failed
     } else {
@@ -154,7 +144,6 @@ async function CreateAbl(req, res) {
         "reason": ajv.errors
       })
     }
-  
 
   //server Error
   } catch (e) {
