@@ -67,18 +67,20 @@ const AddTagDialog = ({ open, handleClose, tag }) => {
     return <Dialog open={open} onClose={handleClose}>
         <DialogTitle>{tag.name.length === 0 ? "Přidání tagu" : "Editace tagu"}</DialogTitle>
         <DialogContent>
-            <TextField
-                autoFocus
-                margin="dense"
-                id="name"
-                label="Jméno tagu"
-                fullWidth
-                value={tagName}
-                onChange={(e) => {
-                    setTagName(e.target.value);
-                }}
-                variant="standard"
-            />
+            <Box width={300}>
+                <TextField
+                    autoFocus
+                    margin="dense"
+                    id="name"
+                    label="Jméno tagu"
+                    fullWidth
+                    value={tagName}
+                    onChange={(e) => {
+                        setTagName(e.target.value);
+                    }}
+                    variant="standard"
+                />
+            </Box>
             {errorMessage === "" ? <Box /> : <Box paddingTop={2}><Alert severity="error">{errorMessage}</Alert></Box>}
         </DialogContent>
         <DialogActions>

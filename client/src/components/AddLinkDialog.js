@@ -8,9 +8,8 @@ import { useState, useEffect } from "react";
 import Box from '@mui/material/Box/Box';
 import Alert from '@mui/material/Alert/Alert';
 
-const AddLinkDialog = ({ open, handleClose, link }) => {
+const AddLinkDialog = ({ open, handleClose }) => {
     const [linkObject, setLinkObject] = useState({
-        "name": "",
         "link": ""
     });
     const [errorMessage, setErrorMessage] = useState('');
@@ -23,7 +22,6 @@ const AddLinkDialog = ({ open, handleClose, link }) => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                name: linkObject.name,
                 link: linkObject.link
             })
         });
@@ -39,42 +37,29 @@ const AddLinkDialog = ({ open, handleClose, link }) => {
     useEffect(
         () => {
             // eslint-disable-next-line
-        }, [link]
+        }, [open]
     )
 
     return <Dialog open={open} onClose={handleClose}>
         <DialogTitle>{"Přidání linku"}</DialogTitle>
         <DialogContent>
-            <TextField
-                autoFocus
-                margin="dense"
-                id="name"
-                label="Jméno linku"
-                fullWidth
-                value={linkObject.name}
-                onChange={(e) => {
-                    setLinkObject({
-                        ...linkObject,
-                        "name": e.target.value,
-                    })
-                }}
-                variant="standard"
-            />
-            <TextField
-                autoFocus
-                margin="dense"
-                id="name"
-                label="URL"
-                fullWidth
-                value={linkObject.link}
-                onChange={(e) => {
-                    setLinkObject({
-                        ...linkObject,
-                        "link": e.target.value,
-                    })
-                }}
-                variant="standard"
-            />
+            <Box width={500}>
+                <TextField
+                    autoFocus
+                    margin="dense"
+                    id="name"
+                    label="URL"
+                    fullWidth
+                    value={linkObject.link}
+                    onChange={(e) => {
+                        setLinkObject({
+                            ...linkObject,
+                            "link": e.target.value,
+                        })
+                    }}
+                    variant="standard"
+                />
+            </Box>
             {errorMessage === "" ? <Box /> : <Box paddingTop={2}><Alert severity="error">{errorMessage}</Alert></Box>}
         </DialogContent>
         <DialogActions>

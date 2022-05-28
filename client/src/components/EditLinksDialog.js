@@ -38,12 +38,7 @@ const fabStyle = {
 
 export default function EditLinksDialog({ open, handleClose }) {
     const [links, setLinks] = useState([]);
-    const [selectedLink, setSelectedLink] = useState({
-        "link": "",
-        "name": ""
-    });
     const [isAddDialogOpen, openAddDialog] = useState(false);
-    const [isDeletedDialogOpen, openDeletedDialog] = useState(false);
 
     const fetchLinks = async () => {
         const linkData = await fetch('http://localhost:5000/link/');
@@ -51,16 +46,11 @@ export default function EditLinksDialog({ open, handleClose }) {
         setLinks(finalData);
     }
 
-    const handleTagEdit = (link) => {
-        setSelectedLink(link);
-        openAddDialog(true);
-    }
-
     useEffect(
         () => {
             fetchLinks()
             // eslint-disable-next-line
-        }, [open, isAddDialogOpen, isDeletedDialogOpen]
+        }, [open, isAddDialogOpen]
     )
 
     return (
@@ -92,13 +82,6 @@ export default function EditLinksDialog({ open, handleClose }) {
                         links.map((link) => (
                             <Box id={link.name + 'box'}>
                                 <ListItem id={link.name + 'list-item'}
-                                    secondaryAction={
-                                        <Box>
-                                            <IconButton aria-label="edit" color='primary' onClick={() => handleTagEdit(link)}>
-                                                <EditIcon />
-                                            </IconButton>
-                                        </Box>
-                                    }
                                 >
                                     <ListItemAvatar>
                                         <Avatar sx={{ bgcolor: "#1976d2" }}>
@@ -117,17 +100,13 @@ export default function EditLinksDialog({ open, handleClose }) {
             </Container>
 
             <Fab color="primary" aria-label="add" onClick={() => {
-                setSelectedLink({
-                    "link": "",
-                    "name": ""
-                })
                 openAddDialog(true);
             }}
                 // @ts-ignore
                 style={fabStyle}>
                 <AddIcon />
             </Fab>
-            <AddLinkDialog open={isAddDialogOpen} handleClose={() => openAddDialog(false)} link={selectedLink} />
+            <AddLinkDialog open={isAddDialogOpen} handleClose={() => openAddDialog(false)} />
         </Dialog >
     );
 }
