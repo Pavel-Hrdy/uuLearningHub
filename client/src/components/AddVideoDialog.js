@@ -11,6 +11,8 @@ import Box from '@mui/material/Box/Box';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import Chip from '@mui/material/Chip/Chip';
 import Alert from '@mui/material/Alert/Alert';
+import FormControlLabel from '@mui/material/FormControlLabel/FormControlLabel';
+import Switch from '@mui/material/Switch/Switch';
 
 const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVideosCallback, editedVideoDetail }) => {
     const [videoInfo, setVideoInfo] = useState({
@@ -19,7 +21,8 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
         "description": "",
         "tags": [],
         "links": [],
-        "id": ""
+        "id": "",
+        "state": "active"
     });
 
     const [subchapterName, setSubchapterName] = useState("");
@@ -66,7 +69,7 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
                     chapterOrderNumber: chapterId,
                     subchapterOrderNumber: subchapterId
                 },
-                state: "active"
+                state: videoInfo["state"]
             })
         });
         const finalData = await result.json();
@@ -91,7 +94,7 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
                 description: videoInfo["description"],
                 tags: videoInfo["tags"].map((tag) => tag.id),
                 links: videoInfo["links"].map((link) => link.name),
-                state: "active"
+                state: videoInfo["state"]
             })
         });
         const finalData = await result.json();
@@ -128,7 +131,8 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
                 "description": editedVideoDetail.description,
                 "tags": editedVideoDetail.tags,
                 "links": editedVideoDetail.links,
-                "id": editedVideoDetail.id
+                "id": editedVideoDetail.id,
+                "state": editedVideoDetail.state
             });
         }
     }
@@ -242,6 +246,15 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
                             />
                         )}
                     />
+                    <Box paddingTop={2}>
+                        <FormControlLabel control={<Switch checked={videoInfo.state === "active"} onChange={(e, v) => {
+                            if (v) {
+                                handleValueChange("state", "active")
+                            } else {
+                                handleValueChange("state", "passive")
+                            }
+                        }} />} label={videoInfo.state === "active" ? "Stav - Active" : "Stav - Passive"} />
+                    </Box>
                     {errorMessage === "" ? <Box /> : <Box paddingTop={2}><Alert severity="error">{errorMessage}</Alert></Box>}
                 </DialogContent>
                 <DialogActions>
