@@ -16,7 +16,6 @@ const drawerWidth = 240;
 
 const CustomDrawer = () => {
     const [selectedChapter, setChapter] = useState('');
-    const [selectedSubchapter, setSelectedSubchapter] = useState('');
     const [chapters, setChapters] = useState([]);
     const { pathname } = useLocation();
 
@@ -99,7 +98,7 @@ const CustomDrawer = () => {
                         {
                             chapter.subchapters.map((subchapter, subchapterIndex) => (
                                 <ListItem key={subchapterIndex + subchapter.subchapterOrderNumber} disablePadding>
-                                    <ListItemButton selected={isSubchapterActive(chapter.chapterOrderNumber, subchapter.subchapterOrderNumber) === true} onClick={() => { setSelectedSubchapter(subchapter.name); }} key={subchapterIndex + subchapter.subchapterOrderNumber + 'button'} component={Link} to={"/chapter/" + chapter.chapterOrderNumber + '/' + subchapter.subchapterOrderNumber}>
+                                    <ListItemButton selected={isSubchapterActive(chapter.chapterOrderNumber, subchapter.subchapterOrderNumber) === true} key={subchapterIndex + subchapter.subchapterOrderNumber + 'button'} component={Link} to={"/chapter/" + chapter.chapterOrderNumber + '/' + subchapter.subchapterOrderNumber}>
                                         <ListItemText primary={subchapter.name} />
                                     </ListItemButton>
                                 </ListItem>

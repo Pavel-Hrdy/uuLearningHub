@@ -15,14 +15,9 @@ import { useState, useEffect } from "react";
 import ListItem from '@mui/material/ListItem/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar/ListItemAvatar';
 import Avatar from '@mui/material/Avatar/Avatar';
-import DeleteIcon from '@mui/icons-material/Delete';
-import TagIcon from '@mui/icons-material/Tag';
 import ListItemText from '@mui/material/ListItemText/ListItemText';
 import Divider from '@mui/material/Divider/Divider';
 import Box from '@mui/material/Box/Box';
-import EditIcon from '@mui/icons-material/Edit';
-import AddTagDialog from './AddTagDialog';
-import DeleteTagDialog from './DeleteTagDialog';
 import AddLinkDialog from './AddLinkDialog';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
