@@ -127,7 +127,7 @@ export default function EditLinksDialog({ open, handleClose }) {
                 style={fabStyle}>
                 <AddIcon />
             </Fab>
-            <AddLinkDialog open={isAddDialogOpen} handleClose={() => openAddDialog(false)} />
+            <AddLinkDialog open={isAddDialogOpen} handleClose={() => openAddDialog(false)} link={selectedLink} />
         </Dialog >
     );
 }
