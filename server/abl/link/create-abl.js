@@ -31,7 +31,7 @@ async function CreateAbl(req, res) {
     if (valid) {
       let linkToValidate = req.body.link;
       if (!linkToValidate.startsWith("https://developer.mozilla.org")) {
-        return res.statur(400).json({
+        return res.status(400).json({
           "error": "The link is not valid!"
         })
       };
