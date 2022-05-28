@@ -12,13 +12,14 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import Chip from '@mui/material/Chip/Chip';
 import Alert from '@mui/material/Alert/Alert';
 
-const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVideosCallback }) => {
+const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVideosCallback, editedVideoDetail }) => {
     const [videoInfo, setVideoInfo] = useState({
         "name": "",
         "url": "",
         "description": "",
         "tags": [],
         "links": [],
+        "id": ""
     });
 
     const [subchapterName, setSubchapterName] = useState("");
@@ -38,10 +39,14 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
         setTags(finalData);
     }
 
+
+
     const fetchSubchapterName = async () => {
-        const linkData = await fetch(`http://localhost:5000/chapter/${chapterId}-${subchapterId}`);
-        const finalData = await linkData.json();
-        setSubchapterName(finalData.name);
+        if (!editedVideoDetail) {
+            const linkData = await fetch(`http://localhost:5000/chapter/${chapterId}-${subchapterId}`);
+            const finalData = await linkData.json();
+            setSubchapterName(finalData.name);
+        }
     }
 
     const handleAddingVideo = async () => {
@@ -73,6 +78,31 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
         }
     }
 
+    const handleEditingVideo = async () => {
+        const result = await fetch('http://localhost:5000/video/update', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                id: videoInfo["id"],
+                name: videoInfo["name"],
+                description: videoInfo["description"],
+                tags: videoInfo["tags"].map((tag) => tag.id),
+                links: videoInfo["links"].map((link) => link.name),
+                state: "active"
+            })
+        });
+        const finalData = await result.json();
+        if (finalData["error"]) {
+            setErrorMessage(finalData.error)
+        } else {
+            handleClose();
+            reloadVideosCallback();
+        }
+    }
+
     const addLinks = async () => {
         const linkData = await fetch('http://localhost:5000/link');
         const finalData = await linkData.json();
@@ -85,9 +115,23 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
             addLinks();
             fetchSubchapterName();
             setErrorMessage("");
+            setValuesForEditedVideo();
             // eslint-disable-next-line
         }, [open]
     )
+
+    const setValuesForEditedVideo = () => {
+        if (editedVideoDetail) {
+            setVideoInfo({
+                "name": editedVideoDetail.name,
+                "url": editedVideoDetail.link,
+                "description": editedVideoDetail.description,
+                "tags": editedVideoDetail.tags,
+                "links": editedVideoDetail.links,
+                "id": editedVideoDetail.id
+            });
+        }
+    }
 
     const handleValueChange = (propName, value) => {
         setVideoInfo(
@@ -116,27 +160,29 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
     return (
         <div>
             <Dialog open={open} onClose={handleClose} fullWidth>
-                <DialogTitle>{`Přidání videa do podkapitoly "${subchapterName}"`}</DialogTitle>
+                <DialogTitle>{editedVideoDetail ? `Editace videa "${editedVideoDetail.name}"` : `Přidání videa do podkapitoly "${subchapterName}"`}</DialogTitle>
                 <DialogContent>
                     <TextField
                         autoFocus
                         margin="dense"
                         id="video-name"
                         label="Název videa"
+                        value={videoInfo.name}
                         fullWidth
                         variant="standard"
                         onChange={(e) => handleValueChange("name", e.target.value)}
                     />
 
-                    <TextField
+                    {editedVideoDetail ? <Box /> : <TextField
                         autoFocus
                         margin="dense"
                         id="video-url"
+                        value={videoInfo.url}
                         label="URL"
                         fullWidth
                         variant="standard"
                         onChange={(e) => handleValueChange("url", e.target.value)}
-                    />
+                    />}
                     <TextField
                         id="video-description"
                         label="Popis"
@@ -144,6 +190,7 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
                         rows={3}
                         margin="dense"
                         fullWidth
+                        value={videoInfo.description}
                         variant="standard"
                         onChange={(e) => handleValueChange("description", e.target.value)}
                     />
@@ -152,8 +199,9 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
                             multiple
                             id="combo-box-tags"
                             options={tags}
-                            defaultValue={[]}
+                            value={videoInfo.tags}
                             getOptionLabel={(option) => option.name}
+                            isOptionEqualToValue={(option, value) => option.name === value.name}
                             filterSelectedOptions
                             onChange={(e, newValue) => handleAddingTag(newValue)}
                             renderInput={(params) => (
@@ -175,8 +223,9 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
                         multiple
                         id="combo-box-links"
                         options={links}
+                        isOptionEqualToValue={(option, value) => option.name === value.name}
                         getOptionLabel={(option) => option.name}
-                        defaultValue={[]}
+                        value={videoInfo.links}
                         onChange={(e, newValue) => handleAddingLink(newValue)}
                         noOptionsText="Žádné výsledky"
                         filterSelectedOptions
@@ -197,7 +246,7 @@ const AddVideoDialog = ({ open, handleClose, chapterId, subchapterId, reloadVide
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleClose}>Zrušit</Button>
-                    <Button onClick={handleAddingVideo}>Přidat</Button>
+                    <Button onClick={editedVideoDetail ? handleEditingVideo : handleAddingVideo}>{editedVideoDetail ? "Editovat" : "Přidat"}</Button>
                 </DialogActions>
             </Dialog>
         </div>

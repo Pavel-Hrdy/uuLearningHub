@@ -1,7 +1,7 @@
 // @ts-nocheck
 import Box from "@mui/material/Box/Box"
 import { useParams } from 'react-router';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Grid from "@mui/material/Grid/Grid";
 import Card from "@mui/material/Card/Card";
 import CardContent from "@mui/material/CardContent/CardContent";
@@ -12,6 +12,7 @@ import CardActionArea from "@mui/material/CardActionArea/CardActionArea";
 import { useNavigate } from "react-router-dom";
 import Fab from "@mui/material/Fab/Fab";
 import AddIcon from '@mui/icons-material/Add';
+import { GlobalContext } from "context/GlobalContext";
 import AddVideoDialog from "components/AddVideoDialog";
 
 const SubchapterDetail = () => {
@@ -19,6 +20,7 @@ const SubchapterDetail = () => {
     const [videos, setVideos] = useState([]);
     const [openAddVideoDailog, setOpenAddVideoDialog] = useState(false);
     const [reloadVideos, setReloadVideos] = useState(false);
+    const context = useContext(GlobalContext);
 
     const handleClickOpenAddVideoDialog = () => {
         setOpenAddVideoDialog(true);
@@ -29,7 +31,7 @@ const SubchapterDetail = () => {
     };
     let navigate = useNavigate();
     const routeChange = (videoId) => {
-        let path = `/video/${videoId}`;
+        let path = `video/${videoId}`;
         navigate(path);
     }
 
@@ -92,9 +94,9 @@ const SubchapterDetail = () => {
             })
         }
     </Grid>
-        <Fab color="primary" aria-label="add" style={fabStyle} onClick={handleClickOpenAddVideoDialog}>
+        {context.adminMode ? <Fab color="primary" aria-label="add" style={fabStyle} onClick={handleClickOpenAddVideoDialog}>
             <AddIcon />
-        </Fab>
+        </Fab> : <Box />}
         <AddVideoDialog reloadVideosCallback={reloadVideosCallback} chapterId={chapterId} subchapterId={subchapterId} open={openAddVideoDailog} handleClose={() => handleCloseAddVideoDialog()} />
     </Box>;
 }
