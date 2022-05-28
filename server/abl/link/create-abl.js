@@ -29,6 +29,12 @@ async function CreateAbl(req, res) {
     const ajv = new Ajv();
     const valid = ajv.validate(schema, req.body);
     if (valid) {
+      let linkToValidate = req.body.link;
+      if (!linkToValidate.startsWith("https://developer.mozilla.org")) {
+        return res.statur(400).json({
+          "error": "The link is not valid!"
+        })
+      };
       let name;
       if (!req.body.name) {
         name = req.body.link.split("/");
