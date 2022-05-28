@@ -1,3 +1,4 @@
+// @ts-nocheck
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import TextField from '@mui/material/TextField/TextField'
@@ -20,6 +21,7 @@ const CustomAppBar = () => {
     const [isEditLinksDialogOpen, openEditLinksDialog] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
     const [searchOptions, setSearchOptions] = useState([]);
+    const [resetSearchbar, setResetSearchBar] = useState(false)
 
     useEffect(
         () => {
@@ -28,6 +30,7 @@ const CustomAppBar = () => {
         }, [searchQuery]
     )
 
+
     const navigateToResults = (query) => {
         const isTag = searchQuery.length > 0 && searchQuery.charAt(0) === '#' ? 1 : 0;
         let editedQuery = query;
@@ -35,7 +38,8 @@ const CustomAppBar = () => {
         if (isTag) {
             editedQuery = editedQuery.substring(1);
         }
-
+        setResetSearchBar(!resetSearchbar);
+        setSearchOptions([]);
         const path = `/search/?query=${editedQuery}&isTag=${isTag}`;
         navigate(path);
     }
@@ -89,13 +93,13 @@ const CustomAppBar = () => {
             </Box>
             <Box marginLeft="auto" display="flex" width={400} >
                 <Autocomplete
+                    key={resetSearchbar}
                     freeSolo
                     fullWidth
                     disableClearable
                     options={searchOptions}
                     onKeyDown={e => {
                         if (e.code === 'Enter') {
-                            // @ts-ignore
                             navigateToResults(e.target.value)
                         }
                     }}
@@ -105,16 +109,13 @@ const CustomAppBar = () => {
                             {...params}
                             label="Vyhledávání"
                             onChange={(e) => setSearchQuery(e.target.value)}
-
                             InputProps={{
                                 ...params.InputProps,
                                 type: 'search',
                             }}
-
                         />
                     )}
                 />
-
             </Box>
         </Toolbar>
         <EditTagsDialog open={isEditTagsDialogOpen} handleClose={() => openEditTagsDialog(false)} />
