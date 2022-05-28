@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import CustomDrawer from './components/CustomDrawer';
 import { GlobalProvider } from "./context/GlobalContext";
+import SearchResults from 'pages/SearchResults';
 
 const App = () =>
 
@@ -24,6 +25,7 @@ const App = () =>
             <Route path="/" element={<Home />} />
             <Route path="/chapter/:chapterId/:subchapterId" element={<SubchapterDetail />} />
             <Route path="/chapter/:chapterId/:subchapterId/video/:videoId" element={<VideoDetail />} />
+            <Route path="/search/" element={<SearchResults />} />
           </Routes>
         </Box>
       </BrowserRouter >

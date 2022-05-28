@@ -17,8 +17,10 @@ import DeleteVideoDialog from "components/DeleteVideoDialog";
 import EditIcon from '@mui/icons-material/Edit';
 import AddVideoDialog from "components/AddVideoDialog";
 import { GlobalContext } from "context/GlobalContext";
-const VideoDetail = () => {
+import { useNavigate } from "react-router-dom";
 
+const VideoDetail = () => {
+    const navigate = useNavigate();
     const [rating, setRating] = useState(3);
     const [tags, setTags] = useState([]);
     const [links, setLinks] = useState([]);
@@ -46,6 +48,11 @@ const VideoDetail = () => {
 
     const refreshCallback = () => {
         setRefresh(!refresh);
+    }
+
+    const navigateToSearchResults = (tagName) => {
+        let path = `/search/?query=${tagName}&isTag=1`;
+        navigate(path);
     }
 
     const getTagsAndLinks = async (videoData) => {
@@ -132,7 +139,7 @@ const VideoDetail = () => {
                     {
                         tags.map((tag, index) => {
                             return <Grid item key={tag["name"] + index}>
-                                <Chip label={`#${tag["name"]}`} color="primary" />
+                                <Chip label={`#${tag["name"]}`} color="primary" onClick={() => navigateToSearchResults(tag["name"])} />
                             </Grid>
                         })
                     }
