@@ -10,10 +10,12 @@ import LinkIcon from '@mui/icons-material/Link';
 import { GlobalContext } from "context/GlobalContext";
 import { useContext, useState } from "react";
 import EditTagsDialog from './EditTagsDialog';
+import EditLinksDialog from './EditLinksDialog';
 
 const CustomAppBar = () => {
     const context = useContext(GlobalContext);
     const [isEditTagsDialogOpen, openEditTagsDialog] = useState(false);
+    const [isEditLinksDialogOpen, openEditLinksDialog] = useState(false);
 
     return <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor: '#c1edff' }}>
         <Toolbar>
@@ -28,7 +30,7 @@ const CustomAppBar = () => {
                 }
                 {
                     context.adminMode ? <Box alignSelf={"center"}>
-                        <Button variant="outlined" size="small" startIcon={<LinkIcon />}>
+                        <Button onClick={() => openEditLinksDialog(true)} variant="outlined" size="small" startIcon={<LinkIcon />}>
                             Upravit linky
                         </Button>
                     </Box> : <Box />
@@ -55,6 +57,7 @@ const CustomAppBar = () => {
             </Box>
         </Toolbar>
         <EditTagsDialog open={isEditTagsDialogOpen} handleClose={() => openEditTagsDialog(false)} />
+        <EditLinksDialog open={isEditLinksDialogOpen} handleClose={() => openEditLinksDialog(false)} />
     </AppBar>
 }
 
