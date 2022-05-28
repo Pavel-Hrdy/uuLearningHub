@@ -52,18 +52,21 @@ const SubchapterDetail = () => {
     };
 
 
-    return <Box><Grid container spacing={2}>
+    return <Box>
+        <Grid container spacing={2}>
+            {
+                videos.map((video) => {
+                    return <VideoTile video={video} onClick={() => routeChange(video.id)} />
+                })
+            }
+        </Grid>
         {
-            videos.map((video) => {
-                return <VideoTile video={video} onClick={() => routeChange(video.id)} />
-            })
+            context.adminMode ? <Fab color="primary" aria-label="add" style={fabStyle} onClick={handleClickOpenAddVideoDialog}>
+                <AddIcon />
+            </Fab> : <Box />
         }
-    </Grid>
-        {context.adminMode ? <Fab color="primary" aria-label="add" style={fabStyle} onClick={handleClickOpenAddVideoDialog}>
-            <AddIcon />
-        </Fab> : <Box />}
         <AddVideoDialog reloadVideosCallback={reloadVideosCallback} chapterId={chapterId} subchapterId={subchapterId} open={openAddVideoDailog} handleClose={() => handleCloseAddVideoDialog()} />
-    </Box>;
+    </Box >;
 }
 
 

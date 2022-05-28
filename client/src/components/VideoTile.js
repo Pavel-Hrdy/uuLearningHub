@@ -8,6 +8,7 @@ import Rating from "@mui/material/Rating/Rating"
 import Typography from "@mui/material/Typography/Typography"
 import { useContext } from "react";
 import { GlobalContext } from "context/GlobalContext";
+import CardActions from "@mui/material/CardActions/CardActions"
 
 
 const VideoTile = ({ video, onClick }) => {
@@ -15,7 +16,7 @@ const VideoTile = ({ video, onClick }) => {
 
     return video.state === "active" || context.adminMode ?
         <Grid item xs={3} key={video.id}>
-            <Card elevation={4}>
+            <Card elevation={4} >
                 <CardActionArea onClick={onClick}>
                     <CardMedia
                         component="img"
@@ -23,11 +24,17 @@ const VideoTile = ({ video, onClick }) => {
                         image={`http://img.youtube.com/vi/${video.id}/0.jpg`}
                         alt="green iguana"
                     />
-                    <CardContent style={{ backgroundColor: video.state === "active" ? "white" : "lightGrey" }}>
-                        <Typography gutterBottom variant="h5" component="div">
-                            {video.name}
-                        </Typography>
-                        <Box display="flex">
+                    <CardContent style={{
+                        backgroundColor: video.state === "active" ? "white" : "lightGrey",
+                    }}>
+                        <Box height={70}>
+                            <Typography gutterBottom variant="h5" component="div">
+                                {video.name}
+                            </Typography>
+                        </Box>
+                    </CardContent>
+                    <CardActions>
+                        <Box display="flex" paddingLeft={1}>
                             <Rating readOnly
                                 name="read-only"
                                 value={video.rating}
@@ -41,10 +48,10 @@ const VideoTile = ({ video, onClick }) => {
                                 </Box>
                             )}
                         </Box>
-                    </CardContent>
+                    </CardActions>
                 </CardActionArea>
             </Card>
-        </Grid> : null
+        </Grid > : null
 }
 
 export default VideoTile
