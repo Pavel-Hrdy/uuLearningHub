@@ -48,9 +48,7 @@ const SearchResults = () => {
         <Grid container spacing={2}>
             {
                 videos.map((video) => {
-                    return <Grid item xs={3} key={video.id}>
-                        <VideoTile video={video} onClick={() => routeChange(video.id, video.chapterSchema.chapterOrderNumber, video.chapterSchema.subchapterOrderNumber)} />
-                    </Grid>
+                    return <VideoTile video={video} onClick={() => routeChange(video.id, video.chapterSchema.chapterOrderNumber, video.chapterSchema.subchapterOrderNumber)} />
                 })
             }
         </Grid>
