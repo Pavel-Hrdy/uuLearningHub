@@ -112,6 +112,8 @@ const VideoDetail = () => {
         window.open(url, "_blank")
     }
 
+    const date = new Date(videoDetail.creationDate)
+
 
     return <Box>
         <Box display="flex">
@@ -171,6 +173,10 @@ const VideoDetail = () => {
                                 setRating(newValue);
                             }}
                         />
+                    </Grid>
+                    <Grid item xs={2} key="video-detail-rating">
+                        <Typography variant="h5" fontWeight="bold">Přidáno</Typography>
+                        {date.toLocaleString()}
                     </Grid>
                 </Grid>
             </CardContent>
