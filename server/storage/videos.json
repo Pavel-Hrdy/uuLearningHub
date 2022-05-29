@@ -60,7 +60,7 @@
       "chapterOrderNumber": "1",
       "subchapterOrderNumber": "1"
     },
-    "state": "active",
+    "state": "passive",
     "creationDate": "2022-05-23T11:44:04.019Z",
     "id": "afSbBjAaqeM",
     "tags": [
@@ -76,7 +76,7 @@
       "first_steps",
       "lexical_grammar"
     ],
-    "rating": 3.029997399022497,
+    "rating": 1.029997399022497,
     "numberOfRatings": 31
   },
   {
