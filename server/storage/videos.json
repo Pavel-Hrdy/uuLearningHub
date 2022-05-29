@@ -23,8 +23,8 @@
       "first_steps",
       "lexical_grammar"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.7155742195608656,
+    "numberOfRatings": 23
   },
   {
     "name": "Ovládání JavaScript - co je to JavaScript",
@@ -49,8 +49,8 @@
       "how_the_web_works",
       "lexical_grammar"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.9201190249876094,
+    "numberOfRatings": 33
   },
   {
     "name": "What is JavaScript?",
@@ -76,8 +76,8 @@
       "first_steps",
       "lexical_grammar"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.029997399022497,
+    "numberOfRatings": 31
   },
   {
     "name": "Convert decimal to binary",
@@ -100,8 +100,8 @@
     "links": [
       "number"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.640982874666788,
+    "numberOfRatings": 30
   },
   {
     "name": "Primary Math to convert decimal to binary",
@@ -124,8 +124,8 @@
     "links": [
       "number"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.088624129035206,
+    "numberOfRatings": 13
   },
   {
     "name": "Converting decimal numbers to binary",
@@ -148,8 +148,8 @@
     "links": [
       "number"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 2.5845556066139648,
+    "numberOfRatings": 9
   },
   {
     "name": "Bites, Bytes, Kilobytes, Megabytes",
@@ -170,8 +170,8 @@
     "links": [
       "number"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.038224103722629,
+    "numberOfRatings": 47
   },
   {
     "name": "How many Bytes are in a Gigabyte?",
@@ -192,8 +192,8 @@
     "links": [
       "number"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.11525783379119,
+    "numberOfRatings": 31
   },
   {
     "name": "Unicode UTF-32, UTF-16",
@@ -214,8 +214,8 @@
     "links": [
       "number"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.68266666440876,
+    "numberOfRatings": 47
   },
   {
     "name": "Understanding ASCII and Unicode",
@@ -236,8 +236,8 @@
     "links": [
       "number"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.170115735290948,
+    "numberOfRatings": 25
   },
   {
     "name": "JavaScript Variables Explained",
@@ -262,8 +262,8 @@
       "let",
       "const"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.5472224072632743,
+    "numberOfRatings": 29
   },
   {
     "name": "Proměnné v JavaScriptu",
@@ -289,8 +289,8 @@
       "let",
       "const"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 2.9378858771465195,
+    "numberOfRatings": 23
   },
   {
     "name": "Javascript III - proměnné",
@@ -316,8 +316,8 @@
       "let",
       "const"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.703428922472695,
+    "numberOfRatings": 48
   },
   {
     "name": "Variables in JavaScript",
@@ -342,8 +342,8 @@
       "let",
       "const"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.8387586921095322,
+    "numberOfRatings": 50
   },
   {
     "name": "JavaScript Recursion Examples",
@@ -358,8 +358,8 @@
     "id": "Q0alTGQ-lXk",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.362214756418998,
+    "numberOfRatings": 19
   },
   {
     "name": "Best Javascript Recursion Explanation on YouTube",
@@ -374,8 +374,8 @@
     "id": "LteNqj4DFD8",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.964750296272297,
+    "numberOfRatings": 39
   },
   {
     "name": "How to use the JS Date object ",
@@ -390,8 +390,8 @@
     "id": "-H6xNrnFI80",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.17274135085629,
+    "numberOfRatings": 30
   },
   {
     "name": "How to Display Current Date and Time in Javascript",
@@ -408,8 +408,8 @@
       "b6d37cfe8266d3ed021d1e03cca04130"
     ],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.981444022057305,
+    "numberOfRatings": 34
   },
   {
     "name": "Number Instance Methods and Math Object",
@@ -430,8 +430,8 @@
     "links": [
       "number"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.7773637777554683,
+    "numberOfRatings": 47
   },
   {
     "name": "Number methods and math objects in JavaScript",
@@ -452,8 +452,8 @@
     "links": [
       "number"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.781392821341118,
+    "numberOfRatings": 8
   },
   {
     "name": "Basics of Regular Expressions (Regex) ",
@@ -468,8 +468,8 @@
     "id": "ArxOzeAONHg",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.906284059492428,
+    "numberOfRatings": 21
   },
   {
     "name": "Regular Expressions (Regex) in JavaScript ",
@@ -484,8 +484,8 @@
     "id": "909NfO1St0A",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.720867982579014,
+    "numberOfRatings": 16
   },
   {
     "name": "JavaScript String Object ",
@@ -504,8 +504,8 @@
     "links": [
       "string"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.169399261527133,
+    "numberOfRatings": 36
   },
   {
     "name": "JavaScript String Object",
@@ -524,8 +524,8 @@
     "links": [
       "string"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.954436056330491,
+    "numberOfRatings": 36
   },
   {
     "name": "Map, Set, WeakMap and WeakSet",
@@ -540,8 +540,8 @@
     "id": "rMmnFYvqKtw",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.3878896361172597,
+    "numberOfRatings": 51
   },
   {
     "name": "The differences between Maps and Sets",
@@ -556,8 +556,8 @@
     "id": "m4abICrldQI",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.2937210575902225,
+    "numberOfRatings": 36
   },
   {
     "name": "Objects in JavaScript",
@@ -572,8 +572,8 @@
     "id": "S1dWe3f2zm0",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.9031405093171943,
+    "numberOfRatings": 41
   },
   {
     "name": "Object-oriented Programming in JavaScript",
@@ -588,8 +588,8 @@
     "id": "PFmuCDHHpwk",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.162701536487316,
+    "numberOfRatings": 42
   },
   {
     "name": "What are objects in JavaScript",
@@ -604,8 +604,8 @@
     "id": "4uVwGw317QM",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.811108705795899,
+    "numberOfRatings": 21
   },
   {
     "name": "Array method ",
@@ -620,8 +620,8 @@
     "id": "8FmBEN0XZyI",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.871814359983512,
+    "numberOfRatings": 24
   },
   {
     "name": "JavaScript Array",
@@ -636,8 +636,8 @@
     "id": "oigfaZ5ApsM",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.5849245852536145,
+    "numberOfRatings": 29
   },
   {
     "name": "Arrow function",
@@ -652,8 +652,8 @@
     "id": "u4URamXstM0",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.288207931317773,
+    "numberOfRatings": 40
   },
   {
     "name": "Arrow Functions Tutorial",
@@ -668,8 +668,8 @@
     "id": "NAN7U3MrX6o",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 2.5471518878502253,
+    "numberOfRatings": 51
   },
   {
     "name": "Arrow function in JavaScript",
@@ -684,8 +684,8 @@
     "id": "tJOJPealurs",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.337425327015231,
+    "numberOfRatings": 44
   },
   {
     "name": "What is anonymous function? Understand in brief",
@@ -700,8 +700,8 @@
     "id": "sOhJmoQ-TTY",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.3010596543843307,
+    "numberOfRatings": 50
   },
   {
     "name": "Passing Variables Through Functions",
@@ -716,8 +716,8 @@
     "id": "N3BuFqWWFi0",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 2.8566368157436965,
+    "numberOfRatings": 42
   },
   {
     "name": "Functions - Parameters and Return Values",
@@ -732,8 +732,8 @@
     "id": "1iAvhS8niM8",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 2.928832683148591,
+    "numberOfRatings": 22
   },
   {
     "name": "Javascript Functions & Parameters",
@@ -748,8 +748,8 @@
     "id": "xjAu2Y2nJ34",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.79260957150707,
+    "numberOfRatings": 50
   },
   {
     "name": "What is Scope in JavaScript?",
@@ -764,8 +764,8 @@
     "id": "bD-62OMzni0",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.987158236926109,
+    "numberOfRatings": 45
   },
   {
     "name": "Function Scope & Block Scope",
@@ -780,8 +780,8 @@
     "id": "sIRMWFuad00",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.427139240231127,
+    "numberOfRatings": 8
   },
   {
     "name": "JavaScript Scopes ",
@@ -796,8 +796,8 @@
     "id": "hTU1OSbnov8",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.786383519462713,
+    "numberOfRatings": 13
   },
   {
     "name": "The call method in JavaScript",
@@ -812,8 +812,8 @@
     "id": "CCb96W92A54",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.8912076172293215,
+    "numberOfRatings": 24
   },
   {
     "name": "JavaScript Functions",
@@ -828,8 +828,8 @@
     "id": "N8ap4k_1QEQ",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.482751309789026,
+    "numberOfRatings": 22
   },
   {
     "name": "JavaScript for loop and while loop",
@@ -844,8 +844,8 @@
     "id": "leMzF0esu38",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.820457164230351,
+    "numberOfRatings": 27
   },
   {
     "name": "JavaScript Lops ",
@@ -860,8 +860,8 @@
     "id": "Kn06785pkJg",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.2963570141946583,
+    "numberOfRatings": 54
   },
   {
     "name": "JavaScript loops",
@@ -876,8 +876,8 @@
     "id": "s9wW2PpJsmQ",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.411094610856072,
+    "numberOfRatings": 35
   },
   {
     "name": "If, Else If, Else - Processing Tutorial",
@@ -892,8 +892,8 @@
     "id": "mVq7Ms01RjA",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.450667672172502,
+    "numberOfRatings": 51
   },
   {
     "name": "Conditional Statements If Else in JavaScript",
@@ -908,8 +908,8 @@
     "id": "o_iO9WuoWaM",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 2.796289994176011,
+    "numberOfRatings": 34
   },
   {
     "name": "Create REACTIVE code with conditional statements",
@@ -924,8 +924,8 @@
     "id": "1oxUioUL1Qo",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.412292539617739,
+    "numberOfRatings": 13
   },
   {
     "name": "Logical Operators in JavaScript",
@@ -945,8 +945,8 @@
     "links": [
       "number"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.8863295161573004,
+    "numberOfRatings": 37
   },
   {
     "name": "Logical Operators in JavaScript",
@@ -966,8 +966,8 @@
     "links": [
       "number"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.150048712918869,
+    "numberOfRatings": 22
   },
   {
     "name": "Logical operators",
@@ -987,8 +987,8 @@
     "links": [
       "number"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.548375969417839,
+    "numberOfRatings": 28
   },
   {
     "name": "Arithmetic Operators, Precedence, Associativity",
@@ -1006,8 +1006,8 @@
       "8cf9744bf7371e8e370f69c7b115df4f"
     ],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.750550493921091,
+    "numberOfRatings": 29
   },
   {
     "name": "Základní operátory v JavaScriptu",
@@ -1026,8 +1026,8 @@
       "8cf9744bf7371e8e370f69c7b115df4f"
     ],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.343177727471522,
+    "numberOfRatings": 8
   },
   {
     "name": "What Are Arithmetic Operators In JavaScript",
@@ -1046,8 +1046,8 @@
     "links": [
       "8cf9744bf7371e8e370f69c7b115df4f"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.523597793880981,
+    "numberOfRatings": 47
   },
   {
     "name": "JavaScript Symbols Explained with Examples",
@@ -1062,8 +1062,8 @@
     "id": "8Vlny0Z7XPA",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.849392751031168,
+    "numberOfRatings": 7
   },
   {
     "name": "Difference Between Primitives and Objects",
@@ -1078,8 +1078,8 @@
     "id": "XuTaSCHOiu0",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 2.907381313200142,
+    "numberOfRatings": 26
   },
   {
     "name": "Understand Javascript Variable Datatypes Null, Undefined, and NaN.",
@@ -1094,8 +1094,8 @@
     "id": "EO2aanpSXpM",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.6247304747085756,
+    "numberOfRatings": 32
   },
   {
     "name": "Booleans in JavaScript aka True and False",
@@ -1110,8 +1110,8 @@
     "id": "0Z6Vy3ppCyk",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.516476461353371,
+    "numberOfRatings": 21
   },
   {
     "name": "Boolean ddata type",
@@ -1126,8 +1126,8 @@
     "id": "S1coFOL6oGI",
     "tags": [],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.411025367031804,
+    "numberOfRatings": 14
   },
   {
     "name": "JavaScript Number data type and global Number object explained",
@@ -1147,8 +1147,8 @@
     "links": [
       "b6d37cfe8266d3ed021d1e03cca04130"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.277105870926388,
+    "numberOfRatings": 25
   },
   {
     "name": "Number Data Type",
@@ -1168,8 +1168,8 @@
     "links": [
       "b6d37cfe8266d3ed021d1e03cca04130"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.276915004516393,
+    "numberOfRatings": 53
   },
   {
     "name": "String Data Type",
@@ -1186,8 +1186,8 @@
       "2e52a2b454980f8d4be960cd396003e5"
     ],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 2.9684106747640273,
+    "numberOfRatings": 51
   },
   {
     "name": "JavaScript string",
@@ -1204,8 +1204,8 @@
       "2e52a2b454980f8d4be960cd396003e5"
     ],
     "links": [],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.4575362938006715,
+    "numberOfRatings": 13
   },
   {
     "name": "Data types in JavaScript",
@@ -1224,8 +1224,8 @@
     "links": [
       "string"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.568496424300042,
+    "numberOfRatings": 21
   },
   {
     "name": "Data Types",
@@ -1244,8 +1244,8 @@
     "links": [
       "string"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 2.649474489792958,
+    "numberOfRatings": 47
   },
   {
     "name": "JavaScript Comments",
@@ -1269,8 +1269,8 @@
       "comment",
       "expressions_and_operators"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.4171707935659317,
+    "numberOfRatings": 39
   },
   {
     "name": "How to create Variables in Javascript",
@@ -1294,8 +1294,8 @@
       "comment",
       "expressions_and_operators"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.5435550272341203,
+    "numberOfRatings": 27
   },
   {
     "name": "Variable and property names in JS",
@@ -1319,8 +1319,8 @@
       "comment",
       "expressions_and_operators"
     ],
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.5560841603714213,
+    "numberOfRatings": 10
   },
   {
     "name": "Variables: let, const and var",
@@ -1342,8 +1342,8 @@
     "state": "active",
     "creationDate": "2022-05-26T13:52:31.685Z",
     "id": "YKvoSoA9CPw",
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.28293239262025,
+    "numberOfRatings": 34
   },
   {
     "name": "JS Basic Mathematical Operators",
@@ -1364,7 +1364,6 @@
       "var",
       "let",
       "const"
-
     ],
     "chapterSchema": {
       "chapterOrderNumber": "5",
@@ -1373,8 +1372,8 @@
     "state": "active",
     "creationDate": "2022-05-26T13:55:36.434Z",
     "id": "_MC0Gw07w8M",
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 2.5536173119821863,
+    "numberOfRatings": 41
   },
   {
     "name": "ECMAScript vs JavaScript",
@@ -1399,8 +1398,8 @@
     "state": "active",
     "creationDate": "2022-05-26T14:13:00.252Z",
     "id": "ZulAmqxIcQg",
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 2.9476358318333573,
+    "numberOfRatings": 31
   },
   {
     "name": "Basic Web Development Concepts",
@@ -1425,8 +1424,8 @@
     "state": "active",
     "creationDate": "2022-05-26T14:16:15.926Z",
     "id": "FXqTHsPaY0A",
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 4.946452182599282,
+    "numberOfRatings": 11
   },
   {
     "name": "How to Start Learning JavaScript?",
@@ -1451,7 +1450,7 @@
     "state": "active",
     "creationDate": "2022-05-26T14:18:41.003Z",
     "id": "AlgSwIRw4do",
-    "rating": 0,
-    "numberOfRatings": 0
+    "rating": 3.45232175243477,
+    "numberOfRatings": 42
   }
 ]
